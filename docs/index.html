@@ -185,9 +185,13 @@
     /* KEYFRAMES */
     /* ********************************* */
 
+    .download-button {
+      /* flex-direction: row; */
+      margin: auto;
+      display: inline-block;
+    }
 
-
-    @media screen and (max-width: 768px) {
+    @media screen and (max-width: 800px) {
       .team-profiles {
         flex-direction: column;
       }
@@ -202,16 +206,34 @@
       }
 
       .nav-icon {
-        height: 24px;
-        width: 24px;
+        /* height: 24px;
+        width: 24px; */
         position: absolute;
         top: 50%;
-        -ms-transform: translateY(-40%);
-        transform: translateY(-40%);
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
       }
 
       .team-div {
         text-align: center;
+      }
+
+      .download-button {
+        /* flex-direction: column;
+        justify-content: center;
+        align-items: center; */
+        /* display: table-column-group; */
+        /* position: relative; */
+        display: block;
+        margin-top: 10px;
+      }
+
+      .nav-logo-text {
+        position: absolute;
+        left: 35%;
+        top: 15%;
+        /* text-align: center; */
+
       }
 
       /* .team-profile:not(:last-child) {
@@ -223,11 +245,16 @@
 
       .nav-item:not(:last-child) {
         padding-right: 1rem;
-      } */
+      }
 
-    /* .nav-item-text {
+      .nav-item-text {
         display: none;
       } */
+
+    /* .download {
+        display: none;
+      } */
+
     /* } */
   </style>
 </head>
@@ -307,15 +334,21 @@
   <section name="download" class="download" id="download">
     <h1 class="section-title">Download ReacType</h1>
     <div class="download-buttons">
-      <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0">
-        <button class="btn-primary" style="border-radius:5px">Download for Mac</button>
-      </a>
-      <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0">
-        <button class="btn-primary" style="border-radius:5px">Download for Windows</button>
-      </a>
-      <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0">
-        <button class="btn-primary" style="border-radius:5px">Download for Linux</button>
-      </a>
+      <div class="download-button">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0">
+          <button class="btn-primary" style="border-radius:5px">Download for Mac</button>
+        </a>
+      </div>
+      <div class="download-button">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0">
+          <button class="btn-primary" style="border-radius:5px">Download for Windows</button>
+        </a>
+      </div>
+      <div class="download-button">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0">
+          <button class="btn-primary" style="border-radius:5px">Download for Linux</button>
+        </a>
+      </div>
     </div>
   </section>
   <!-- end of dowload section -->
