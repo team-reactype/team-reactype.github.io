@@ -29,7 +29,7 @@
 
     .flex-container>div {
       /* background-color: #f1f1f1; */
-      width: 75%;
+      width: 100%;
       margin: 10px;
       text-align: center;
     }
@@ -47,10 +47,6 @@
       opacity: .8;
     }
 
-    /* #spaceFiller {
-      float: right;
-
-    } */
 
     .nav-icon {
       height: 2rem;
@@ -131,12 +127,17 @@
       /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
     }
 
-    .team {
-      display: flex;
-      flex-direction: row;
+    /* .team-name {
       justify-content: center;
       align-items: center;
-      padding: 4rem 0;
+    } */
+
+    .team {
+      display: flex;
+      flex-direction: column;
+      /* justify-content: center;
+      align-items: center; */
+      /* padding: 4rem 0; */
       /* background-color: rgb(209, 208, 208) */
       /* background-color: rgb(100, 158, 229); */
       /* background-color: rgb(208, 20, 73); */
@@ -160,10 +161,10 @@
 
 
     .team-images {
-      width: 15rem;
-      height: 15rem;
-      border-radius: 50%;
-      background-size: cover;
+      width: 13rem;
+      height: 14rem;
+      border-radius: 70%;
+      /* background-size: cover; */
       background-position: center;
       display: flex;
       flex: 1 1 auto;
@@ -186,31 +187,57 @@
 
 
 
-    @media screen and (max-width: 800px) {
+    @media screen and (max-width: 768px) {
       .team-profiles {
         flex-direction: column;
       }
 
-      .team-profile:not(:last-child) {
-        margin-bottom: 2rem;
+      /* for cell phones  */
+      /* [class*="col-"] {
+        width: 100%;
+      } */
+
+      .nav-item-text {
+        display: none;
       }
+
+      .nav-icon {
+        height: 24px;
+        width: 24px;
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-40%);
+        transform: translateY(-40%);
+      }
+
+      .team-div {
+        text-align: center;
+      }
+
+      /* .team-profile:not(:last-child) {
+        margin-bottom: 2rem;
+      } */
     }
 
-    @media screen and (max-width: 450px) {
+    /* @media screen and (max-width: 450px) {
 
       .nav-item:not(:last-child) {
         padding-right: 1rem;
-      }
-    }
+      } */
+
+    /* .nav-item-text {
+        display: none;
+      } */
+    /* } */
   </style>
 </head>
 
 <body>
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="#fullCarousel" name="brand"><img src="images/512x512.png" height="40px"></a>
+    <a class="navbar-brand" href="#fullCarousel" name="brand"><img src="./images/512x512.png" height="40px"></a>
     <ul class="navbar-nav">
       <li class="nav-logo-text">
-        <a class="nav-link" href="#fullCarousel"><img src="images/logo-text.png" height="32px"></a>
+        <a class="nav-link" href="#fullCarousel"><img src="./images/logo-text.png" height="32px"></a>
       </li>
       <li class="nav-item" id="spaceFiller"></li>
     </ul>
@@ -224,7 +251,7 @@
       </li>
       <li>
         <a href="https://github.com/team-reactype/ReacType" target="_blank">
-          <img class="nav-icon" src="images/GitHub-Mark-Light-120px-plus.png">
+          <img class="nav-icon" src="./images/GitHub-Mark-Light-120px-plus.png">
         </a>
       </li>
     </ul>
@@ -245,22 +272,22 @@
       <!-- The slideshow -->
       <div class="carousel-inner">
         <div class="carousel-item active">
-          <img src="/images/Main.png" alt="Los Angeles" width="1100" height="500" />
+          <img src="./images/Main.png" alt="Los Angeles" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="/images/ApplicationTree.png" alt="Chicago" width="1100" height="500" />
+          <img src="./images/ApplicationTree.png" alt="Chicago" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="/images/Canvas-parent-child.resuable.png" alt="New York" width="1100" height="500" />
+          <img src="./images/Canvas-parent-child.resuable.png" alt="New York" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="/images/CodePreview.png" alt="New York" width="1100" height="500" />
+          <img src="./images/CodePreview.png" alt="New York" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="/images/HTML.png" alt="New York" width="1100" height="500" />
+          <img src="./images/HTML.png" alt="New York" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="/images/Props.png" alt="New York" width="1100" height="500" />
+          <img src="./images/Props.png" alt="New York" width="1100" height="500" />
         </div>
       </div>
 
@@ -281,13 +308,13 @@
     <h1 class="section-title">Download ReacType</h1>
     <div class="download-buttons">
       <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0">
-        <button class="btn-primary">Download for Mac</button>
+        <button class="btn-primary" style="border-radius:5px">Download for Mac</button>
       </a>
       <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0">
-        <button class="btn-primary">Download for Windows</button>
+        <button class="btn-primary" style="border-radius:5px">Download for Windows</button>
       </a>
       <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0">
-        <button class="btn-primary">Download for Linux</button>
+        <button class="btn-primary" style="border-radius:5px">Download for Linux</button>
       </a>
     </div>
   </section>
@@ -296,53 +323,69 @@
   <div class="team-div">
     <section name="team" class="team-header">
       <div class="section-title-div">
-        <h1 class="section-title">Contributors: </h1>
+        <h1 class="section-title">Meet Our Team</h1>
       </div>
     </section>
-    <div class="team container-fluid" id="team">
+    <div class="team container-fluid" id="team" class="team">
       <div class="row">
         <div class="col-sm">
-          <h5 class="team-name">Tolga Mizrakci
-            <a href="https://github.com/tolgamizrakci" target="_blank" class="team-links">
-              <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="tolga mizrakci github" height="16px">
-            </a>
-            <a href="https://linkedin.com/in/tolga-mizrakci" target="_blank" class="team-links">
-              <img src="/images/In-White-128.png" alt="tolga Mizrakci linkedIn" height="16px">
-            </a>
-          </h5>
+          <!-- <img src="./images/T.jpg" alt="" height="200px" class="team-images"> -->
+          </br>
+          <div>
+            <h5 class="team-name">Tolga Mizrakci
+              <a href="https://github.com/tolgamizrakci" target="_blank" class="team-links">
+                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="tolga mizrakci github" height="16px">
+              </a>
+              <a href="linkedin.com/in/tolga-mizrakci" target="_blank" class="team-links">
+                <img src="./images/In-White-128.png" alt="tolga Mizrakci linkedIn" height="16px">
+              </a>
+            </h5>
+          </div>
         </div>
 
         <div class="col-sm">
-          <h5 class="team-name">Adam Singer
-            <a href="https://github.com/spincycle01" target="_blank" class="team-links">
-              <img src="images/GitHub-Mark-Light-120px-plus.png" alt="Adam Singer github" height="16px">
-            </a>
-            <a href="https://linkedin.com/in/adsing" target="_blank" class="team-links">
-              <img src="images/In-White-128.png" alt="Adam Singer linkedIn" height="16px">
-            </a>
-          </h5>
+          <!-- <img src="./images/A.jpg" alt="Adam" height="200px" class="team-images"> -->
+          <br />
+          <div>
+            <h5 class="team-name">Adam Singer
+              <a href="https://github.com/spincycle01" target="_blank" class="team-links">
+                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Adam Singer github" height="16px">
+              </a>
+              <a href="linkedin.com/in/adsing" target="_blank" class="team-links">
+                <img src="./images/In-White-128.png" alt="Adam Singer linkedIn" height="16px">
+              </a>
+            </h5>
+          </div>
         </div>
 
         <div class="col-sm">
-          <h5 class="team-name">Christian Padilla
-            <a href="https://github.com/ChristianEdwardPadilla" target="_blank" class="team-links">
-              <img src="images/GitHub-Mark-Light-120px-plus.png" alt="Christian Padilla github" height="16px">
-            </a>
-            <a href="https://linkedin.com/in/ChristianEdwardPadilla" target="_blank" class="team-links">
-              <img src="/images/In-White-128.png" alt="Christian Padilla linkedIn" height="16px">
-            </a>
-          </h5>
+          <!-- <img src="./images/C.jpg" alt="Christian" height="200px" class="team-images"> -->
+          <br />
+          <div>
+            <h5 class="team-name">Christian Padilla
+              <a href="https://github.com/ChristianEdwardPadilla" target="_blank" class="team-links">
+                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Christian Padilla github" height="16px">
+              </a>
+              <a href="linkedin.com/in/ChristianEdwardPadilla" target="_blank" class="team-links">
+                <img src="./images/In-White-128.png" alt="Christian Padilla linkedIn" height="16px">
+              </a>
+            </h5>
+          </div>
         </div>
 
         <div class="col-sm">
-          <h5 class="team-name">Shlomo Porges
-            <a href="https://github.com/ShlomoPorges" target="_blank" class="team-links">
-              <img src="/images/GitHub-Mark-Light-120px-plus.png" alt="Shlomo Porges github" height="16px">
-            </a>
-            <a href="https://linkedin.com/in/shlomoporges" target="_blank" class="team-links">
-              <img src="/images/In-White-128.png" alt="Shlomo Porges linkedIn" height="16px">
-            </a>
-          </h5>
+          <!-- <img src="./images/S.jpg" alt="Shlomo" height="200px" class="team-images"> -->
+          <br>
+          <div>
+            <h5 class="team-name">Shlomo Porges
+              <a href="https://github.com/ShlomoPorges" target="_blank" class="team-links">
+                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Shlomo Porges github" height="16px">
+              </a>
+              <a href="linkedin.com/shlomoporges" target="_blank" class="team-links">
+                <img src="./images/In-White-128.png" alt="Shlomo Porges linkedIn" height="16px">
+              </a>
+            </h5>
+          </div>
         </div>
       </div>
       <br>
