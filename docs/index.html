@@ -24,7 +24,10 @@
     .flex-container {
       display: flex;
       justify-content: center;
-      background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
+      /* background: linear-gradient(180deg, #001951 0%, #0082BD 100%); */
+      background-image: url('rtw.gif');
+      background-repeat: no-repeat;
+      background-size: cover;
     }
 
     .flex-container>div {
@@ -40,44 +43,62 @@
     /* ********************************* */
 
     .nav-logo-text {
-      opacity: 1.0;
+      /* opacity: .75; */
+      /* position: absolute; */
+      left: 35%;
+      top: 15%;
     }
 
     .nav-logo-text:hover {
-      opacity: .8;
+      /* opacity: 1; */
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
     }
 
-
+    /* github icon */
     .nav-icon {
       height: 2rem;
       width: 2rem;
-      opacity: 0.5;
+      opacity: 0.75;
       position: fixed;
       right: 0px;
       margin-right: 25px;
+      color: white;
     }
-
     .nav-icon:hover {
-      opacity: 1.0;
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.5);
     }
 
-    /* .nav-item-text {
+    .nav-item-text {
       text-align: end;
-    } */
+    }
 
     #leftNav {
       position: relative;
     }
 
-    /* #download-link {
-      float: left;
-      left: 0px;
-    } */
-
-    /* #meet {
-      float: right;
-      right: 100px;
-    } */
+    /* download button to redirect to download buttons */
+    #download-link {
+      color: white;
+      opacity: .5;
+    }
+    #download-link:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+    }
+    /* meet the team button to redirect to team */
+    #meet-link {
+      color: white;
+      opacity: .5;
+    }
+    #meet-link:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+    }
 
 
     /* ********************************* */
@@ -86,23 +107,28 @@
 
     .download {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       align-items: center;
-      background-color: rgb(188, 184, 184);
-      background-image: linear-gradient(70deg, rgb(188, 184, 184) 20%, #1bcedf 100%);
+      color: white;
+      background: linear-gradient(180deg, #001951 0%, #0082BD 100%);
       padding: 8rem 0;
 
     }
 
     .buttons {
       display: flex;
-      flex-direction: column;
+      /* flex-direction: column; */
       margin-bottom: 2rem;
     }
 
-    .btn-primary:not(:last-child) {
-      margin-right: 2rem;
+    .download-button {
+      display: flex;
+      flex-direction: column;
     }
+
+    /* .btn-primary:not(:last-child) {
+      margin-right: 2rem;
+    } */
 
 
     /* ********************************* */
@@ -110,10 +136,8 @@
     /* ********************************* */
 
     .team-div {
-      background-color: rgb(188, 184, 184);
-      /* background-color: rgb(208, 20, 73); */
-      /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
-      background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%);
+      background-image: linear-gradient(180deg, #0082BD 0%, #3AC6C0 100%);
+      color: white;
     }
 
     .team-header {
@@ -122,15 +146,9 @@
       justify-content: center;
       align-items: center;
       padding: 4rem 0;
-      /* background-color: rgb(188, 184, 184); */
-      /* background-color: rgb(208, 20, 73); */
+      color: white;
       /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
     }
-
-    /* .team-name {
-      justify-content: center;
-      align-items: center;
-    } */
 
     .team {
       display: flex;
@@ -141,7 +159,7 @@
       /* background-color: rgb(209, 208, 208) */
       /* background-color: rgb(100, 158, 229); */
       /* background-color: rgb(208, 20, 73); */
-      /* background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%); */
+      /* background-image: linear-gradient(35deg, #00308B 0%, #1bcedf 100%); */
     }
 
     .team-profile {
@@ -152,7 +170,6 @@
 
     .team-image {
       width: 30rem;
-      /* background-color: green; */
       display: flex;
       flex: 1 1 auto;
       justify-content: center;
@@ -164,7 +181,6 @@
       width: 13rem;
       height: 14rem;
       border-radius: 70%;
-      /* background-size: cover; */
       background-position: center;
       display: flex;
       flex: 1 1 auto;
@@ -196,11 +212,6 @@
         flex-direction: column;
       }
 
-      /* for cell phones  */
-      /* [class*="col-"] {
-        width: 100%;
-      } */
-
       .nav-item-text {
         display: none;
       }
@@ -217,54 +228,19 @@
       .team-div {
         text-align: center;
       }
-
-      .download-button {
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        /* display: table-column-group; */
-        /* position: relative; */
-        display: block;
-        margin-top: 10px;
-      }
-
-      .nav-logo-text {
-        position: absolute;
-        left: 35%;
-        top: 15%;
-        /* text-align: center; */
-
-      }
-
-      /* .team-profile:not(:last-child) {
-        margin-bottom: 2rem;
-      } */
     }
 
-    /* @media screen and (max-width: 450px) {
-
-      .nav-item:not(:last-child) {
-        padding-right: 1rem;
-      }
-
-      .nav-item-text {
-        display: none;
-      } */
-
-    /* .download {
-        display: none;
-      } */
-
-    /* } */
   </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+  <!-- header -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style='background-color: #000D35;'>
     <a class="navbar-brand" href="#fullCarousel" name="brand"><img src="./images/512x512.png" height="40px"></a>
     <ul class="navbar-nav">
       <li class="nav-logo-text">
-        <a class="nav-link" href="#fullCarousel"><img src="./images/logo-text.png" height="32px"></a>
+        <a class="nav-link" href="https://github.com/team-reactype/ReacType">
+          <img src="./images/logo-text.png" height="32px"></a>
       </li>
       <li class="nav-item" id="spaceFiller"></li>
     </ul>
@@ -351,8 +327,8 @@
       </div>
     </div>
   </section>
-  <!-- end of dowload section -->
-  <!-- team section -->
+  <!-- end of download section -->
+  <!-- Team section -->
   <div class="team-div">
     <section name="team" class="team-header">
       <div class="section-title-div">
