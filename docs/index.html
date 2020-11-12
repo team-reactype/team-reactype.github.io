@@ -97,7 +97,7 @@
       opacity: 1;
       transition: all .3s ease-in-out;
       transform: scale(1.2);
-      letter-spacing: 3px;
+      letter-spacing: 1px;
       margin: 0 4px;
     }
 
@@ -126,6 +126,7 @@
       background-color: #001951;
       border-color: #000D35;
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(102, 75, 75, 0.19);
+      text-decoration: none;
     }
 
     .btn-primary:hover {
@@ -135,6 +136,7 @@
       border-color: #0082BD;
       box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
       letter-spacing: 4px;
+      text-decoration: none;
     }
 
     .download-buttons {
@@ -142,6 +144,9 @@
       flex-direction: column;
     }
 
+    a {
+      text-decoration: none;
+    }
     /* ********************************* */
     /* TEAM */
     /* ********************************* */
@@ -198,6 +203,30 @@
       opacity: 1.0;
       transition: all .5s ease-in-out;
       transform: scale(1.4);
+    }
+
+    /* ********************************* */
+    /* OTHER TEAM */
+    /* ********************************* */
+    .other-team {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
+    .past-teams {
+      display: flex;
+      justify-content: center;
+    }
+    #team {
+      color: white;
+      opacity: .75;
+    }
+    #team:hover {
+      opacity: 1;
+    }
+    .other-team-header {
+      margin: 4rem 0 10px 0;
     }
 
     /* ********************************* */
@@ -307,13 +336,13 @@
   <div class="download-section" id="download-section">
     <h1 class="section-title">Download ReacType</h1>
     <div class="download-buttons">
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Mac</button>
         </a>
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Windows</button>
         </a>
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0">
+        <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Linux</button>
         </a>
     </div>
@@ -388,8 +417,44 @@
             </div>
           </div>
         </div>
-
       </div>
+      <!-- Start of past contributors  -->
+      <div class="other-team">
+        <div class="other-team-header">
+          <h2>Other Contributors</h2>
+        </div>
+
+        <div class="past-teams">
+          <ul class="team-one" style="list-style-type: none;" >
+            <li><a href="https://linkedin.com/in/adsing" id="team" style="text-decoration: none;">Adam Singer</a></li>
+            <li><a href="https://linkedin.com/in/ChristianEdwardPadilla" id="team" style="text-decoration: none;">Christian Padilla</a></li>
+            <li><a href="https://linkedin.com/shlomoporges" id="team" style="text-decoration: none;">Shlomo Porges  </a></li>
+            <li><a href="https://linkedin.com/in/tolga-mizrakci" id="team" style="text-decoration: none;">Tolga Mizrakci</a></li>
+          </ul>
+
+          <ul class="team-two" style="list-style-type:none;">
+            <li><a href="https://www.linkedin.com/in/chelsey-fewer/" id="team" style="text-decoration: none;">Chelsea Fewer</a></li>
+            <li><a href="https://www.linkedin.com/in/charles-finocchiaro-62440040/" id="team" style="text-decoration: none;">Charles Finocchiaro</a></li>
+            <li><a href="https://www.linkedin.com/in/sophia-huttner-68315975/" id="team" style="text-decoration: none;">Sophia Huttner</a></li>
+            <li><a href="https://www.linkedin.com/in/misevere/" id="team" style="text-decoration: none;">Mitchel Severe</a></li>
+            <li><a href="https://www.linkedin.com/in/vicknatalie/" id="team" style="text-decoration: none;">Natalie Vick</a></li>
+          </ul>
+
+          <ul class="team-three" style="list-style-type:none;">
+            <li><a href="https://www.linkedin.com/in/akbuma" id="team" style="text-decoration: none;">Aaron Bumanglag</a></li>
+            <li><a href="https://www.linkedin.com/in/andrewjcho84/" id="team" style="text-decoration: none;">Andrew Cho</a></li>
+            <li><a href="https://www.linkedin.com/in/fredochen/" id="team" style="text-decoration: none;">Fredo Chen</a></li>
+            <li><a href="https://www.linkedin.com/in/tyler-sullberg" id="team" style="text-decoration: none;">Tyler Sullberg</a></li>
+          </ul>
+
+          <ul class="team-four" style="list-style-type:none;">
+            <li><a href="https://linkedin.com/in/ibeeliot" id="team" style="text-decoration: none;">Eliot Nguyen</a></li>
+            <li><a href="https://linkedin.com/in/jesse-zuniga" id="team" style="text-decoration: none;">Jesse Zuniga</a></li>
+            <li><a href="https://linkedin.com/in/tony-ito-cole" id="team" style="text-decoration: none;">Tony Ito-cole</a></li>
+          </ul>
+        </div>
+      </div>
+      <!-- End of past contributors  -->
       <br>
     </div>
   </div>
