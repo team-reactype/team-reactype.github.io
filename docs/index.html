@@ -52,7 +52,22 @@
     }
 
     /* github icon */
-    .nav-icon {
+    .nav-icon-gh {
+      height: 2rem;
+      width: 2rem;
+      opacity: 0.75;
+      position: fixed;
+      right: 0px;
+      margin-right: 65px;
+      color: white;
+    }
+    .nav-icon-gh:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.5);
+    }
+    /* linkedin icon */
+    .nav-icon-li {
       height: 2rem;
       width: 2rem;
       opacity: 0.75;
@@ -61,15 +76,14 @@
       margin-right: 25px;
       color: white;
     }
-    .nav-icon:hover {
+    .nav-icon-li:hover {
       opacity: 1;
       transition: all .3s ease-in-out;
       transform: scale(1.5);
     }
     .navbar-brand:hover {
       transition: all .3s ease-in-out;
-      transform: scale(1.5
-      );
+      transform: scale(1.5);
       margin: 0 4px;
     }
 
@@ -281,7 +295,12 @@
       </li>
       <li>
         <a href="https://github.com/team-reactype/ReacType" target="_blank">
-          <img class="nav-icon" src="./images/GitHub-Mark-Light-120px-plus.png">
+          <img class="nav-icon-gh" src="./images/GitHub-Mark-Light-120px-plus.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/reactype">
+          <img class="nav-icon-li" src="./images/In-White-128.png" alt="bh linkedIn" >
         </a>
       </li>
     </ul>
