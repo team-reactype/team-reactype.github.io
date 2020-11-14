@@ -87,10 +87,6 @@
       margin: 0 4px;
     }
 
-    /* .nav-item-text {
-      text-align: end;
-    } */
-
     /* download button to redirect to download buttons */
     #download-link {
       color: white;
@@ -116,7 +112,6 @@
       margin: 0 4px;
     }
 
-
     /* ********************************* */
     /* DOWNLOAD */
     /* ********************************* */
@@ -129,7 +124,7 @@
       background: linear-gradient(180deg, #001951 0%, #0082BD 100%);
       padding: 5rem 0;
     }
-
+    /* download btn */
     .btn-primary {
       display: flex;
       align-self: center;
@@ -143,7 +138,6 @@
       box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(102, 75, 75, 0.19);
       text-decoration: none;
     }
-
     .btn-primary:hover {
       transition: all .5s ease-in-out;
       transform: scale(1.2);
@@ -153,32 +147,29 @@
       letter-spacing: 4px;
       text-decoration: none;
     }
-
     .download-buttons {
       display: flex;
       flex-direction: column;
     }
-
     a {
       text-decoration: none;
     }
+
     /* ********************************* */
     /* TEAM */
     /* ********************************* */
 
     .team-div {
-      background-image: linear-gradient(180deg, #0082BD 0%, #3AC6C0 100%);
+      background-image: linear-gradient(180deg, #0082BD 0%, #5AD2C8 100%);
       color: white;
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-
     .team-header {
       padding: 2rem 0;
     }
-    
     .team-name {
       font-size: 25px;
     }
@@ -188,14 +179,12 @@
       color: #001951;
       letter-spacing: 2px;
     }
-
     .col-sm {
       display: flex;
       flex-direction: column;
       justify-content: center;
       align-items: center;
     }
-
     .team-links {
     display: flex;
     flex-direction: row;
@@ -288,7 +277,7 @@
 
     <ul class="navbar-nav" id="leftNav">
       <li class="nav-item-text">
-        <a class="nav-link" id="download-link" href="#download">Download</a>
+        <a class="nav-link" id="download-link" href="#download-section">Download</a>
       </li>
       <li class="nav-item-text">
         <a class="nav-link" id="meet-link" href="#team">Meet the Team</a>
@@ -315,7 +304,7 @@
         <li data-target="#demo" data-slide-to="2"></li>
         <li data-target="#demo" data-slide-to="3"></li>
         <li data-target="#demo" data-slide-to="4"></li>
-        <li data-target="#demo" data-slide-to="5"></li>
+        <!-- <li data-target="#demo" data-slide-to="5"></li> -->
       </ul>
 
       <!-- The slideshow -->
@@ -327,16 +316,16 @@
           <img src="./images/ApplicationTree.png" alt="Chicago" width="1100" height="500" />
         </div>
         <div class="carousel-item">
-          <img src="./images/Canvas-parent-child.resuable.png" alt="New York" width="1100" height="500" />
+          <img src="./images/Canvas.png" alt="New York" width="1100" height="500" />
         </div>
         <div class="carousel-item">
           <img src="./images/CodePreview.png" alt="New York" width="1100" height="500" />
         </div>
-        <div class="carousel-item">
+        <!-- <div class="carousel-item">
           <img src="./images/HTML.png" alt="New York" width="1100" height="500" />
-        </div>
+        </div> -->
         <div class="carousel-item">
-          <img src="./images/Props.png" alt="New York" width="1100" height="500" />
+          <img src="./images/Tutorial.png" alt="New York" width="1100" height="500" />
         </div>
       </div>
 
@@ -356,13 +345,13 @@
   <div class="download-section" id="download-section">
     <h1 class="section-title">Download ReacType</h1>
     <div class="download-buttons">
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0" style="text-decoration: none;">
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.4.0.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Mac</button>
         </a>
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0" style="text-decoration: none;">
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.4.0.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Windows</button>
         </a>
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0" style="text-decoration: none;">
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.4.0.0" style="text-decoration: none;">
           <button class="btn-primary" style="border-radius:5px">Linux</button>
         </a>
     </div>
