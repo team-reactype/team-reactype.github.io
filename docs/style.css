@@ -1,5 +1,7 @@
   
-
+  body {
+    background-color: rgb(252, 252, 252);
+  }
     
     /* ********************************* */
     /* NAVIGATION */
@@ -41,11 +43,8 @@
       opacity: 0.9;
     }
     #download-link:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.2);
-      letter-spacing: 4px;
-      margin: 0 4px;
+      opacity: 0.9;
+      color:rgb(77, 206, 211)
     }
     /* meet the team button to redirect to team */
      #meet-link {
@@ -53,11 +52,8 @@
       opacity: 0.9;
     }
     #meet-link:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      margin: 0 4px;
+      opacity: 0.9;
+      color:rgb(77, 206, 211)
     } 
     .footer-link {
       color: rgb(199, 199, 199);
