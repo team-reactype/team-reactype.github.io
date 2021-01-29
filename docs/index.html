@@ -7,423 +7,97 @@
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>ReacType</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="favicon.ico">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
-    /* Make the image fully responsive */
-    .carousel-inner img {
-      width: 100%;
-      height: 100%;
-    }
 
-    #fullCarousel {
-      /* opacity: 0.1; */
-    }
-
-    .flex-container {
-      display: flex;
-      justify-content: center;
-      background: linear-gradient(135deg, #5b247a 0%, #1bcedf 100%);
-    }
-
-    .flex-container>div {
-      /* background-color: #f1f1f1; */
-      width: 100%;
-      margin: 10px;
-      text-align: center;
-    }
-
-
-    /* ********************************* */
-    /* NAVIGATION */
-    /* ********************************* */
-
-    .nav-logo-text {
-      opacity: 1.0;
-    }
-
-    .nav-logo-text:hover {
-      opacity: .8;
-    }
-
-
-    .nav-icon {
-      height: 2rem;
-      width: 2rem;
-      opacity: 0.5;
-      position: fixed;
-      right: 0px;
-      margin-right: 25px;
-    }
-
-    .nav-icon:hover {
-      opacity: 1.0;
-    }
-
-    /* .nav-item-text {
-      text-align: end;
-    } */
-
-    #leftNav {
-      position: relative;
-    }
-
-    /* #download-link {
-      float: left;
-      left: 0px;
-    } */
-
-    /* #meet {
-      float: right;
-      right: 100px;
-    } */
-
-
-    /* ********************************* */
-    /* DOWNLOAD */
-    /* ********************************* */
-
-    .download {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      background-color: rgb(188, 184, 184);
-      background-image: linear-gradient(70deg, rgb(188, 184, 184) 20%, #1bcedf 100%);
-      padding: 8rem 0;
-
-    }
-
-    .buttons {
-      display: flex;
-      flex-direction: column;
-      margin-bottom: 2rem;
-    }
-
-    .btn-primary:not(:last-child) {
-      margin-right: 2rem;
-    }
-
-
-    /* ********************************* */
-    /* TEAM */
-    /* ********************************* */
-
-    .team-div {
-      background-color: rgb(188, 184, 184);
-      /* background-color: rgb(208, 20, 73); */
-      /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
-      background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%);
-    }
-
-    .team-header {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      padding: 4rem 0;
-      /* background-color: rgb(188, 184, 184); */
-      /* background-color: rgb(208, 20, 73); */
-      /* background-image: linear-gradient(140deg, rgb(188, 184, 184) 20%, #1bcedf 70%); */
-    }
-
-    /* .team-name {
-      justify-content: center;
-      align-items: center;
-    } */
-
-    .team {
-      display: flex;
-      flex-direction: column;
-      /* justify-content: center;
-      align-items: center; */
-      /* padding: 4rem 0; */
-      /* background-color: rgb(209, 208, 208) */
-      /* background-color: rgb(100, 158, 229); */
-      /* background-color: rgb(208, 20, 73); */
-      /* background-image: linear-gradient(35deg, #5b247a 0%, #1bcedf 100%); */
-    }
-
-    .team-profile {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-    }
-
-    .team-image {
-      width: 30rem;
-      /* background-color: green; */
-      display: flex;
-      flex: 1 1 auto;
-      justify-content: center;
-      align-items: center;
-    }
-
-
-    .team-images {
-      width: 13rem;
-      height: 14rem;
-      border-radius: 70%;
-      /* background-size: cover; */
-      background-position: center;
-      display: flex;
-      flex: 1 1 auto;
-      justify-content: center;
-      align-items: center;
-    }
-
-    .team-links {
-      opacity: 0.5;
-      border: 100px white;
-    }
-
-    .team-links:hover {
-      opacity: 1.0;
-    }
-
-    /* ********************************* */
-    /* KEYFRAMES */
-    /* ********************************* */
-
-    .download-button {
-      /* flex-direction: row; */
-      margin: auto;
-      display: inline-block;
-    }
-
-    @media screen and (max-width: 800px) {
-      .team-profiles {
-        flex-direction: column;
-      }
-
-      /* for cell phones  */
-      /* [class*="col-"] {
-        width: 100%;
-      } */
-
-      .nav-item-text {
-        display: none;
-      }
-
-      .nav-icon {
-        /* height: 24px;
-        width: 24px; */
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
-
-      .team-div {
-        text-align: center;
-      }
-
-      .download-button {
-        /* flex-direction: column;
-        justify-content: center;
-        align-items: center; */
-        /* display: table-column-group; */
-        /* position: relative; */
-        display: block;
-        margin-top: 10px;
-      }
-
-      .nav-logo-text {
-        position: absolute;
-        left: 35%;
-        top: 15%;
-        /* text-align: center; */
-
-      }
-
-      /* .team-profile:not(:last-child) {
-        margin-bottom: 2rem;
-      } */
-    }
-
-    /* @media screen and (max-width: 450px) {
-
-      .nav-item:not(:last-child) {
-        padding-right: 1rem;
-      }
-
-      .nav-item-text {
-        display: none;
-      } */
-
-    /* .download {
-        display: none;
-      } */
-
-    /* } */
-  </style>
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
-    <a class="navbar-brand" href="#fullCarousel" name="brand"><img src="./images/512x512.png" height="40px"></a>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style='background-color: #1a1d24;'>
+    <a class="navbar-brand mr-0" name="brand"><img src="./images/512x512.png" height="30px"></a>
+
     <ul class="navbar-nav">
       <li class="nav-logo-text">
-        <a class="nav-link" href="#fullCarousel"><img src="./images/logo-text.png" height="32px"></a>
+        <a class="nav-link" href="https://github.com/team-reactype/ReacType">
+          <img src="./images/logo-text.png" height="32px"></a>
       </li>
-      <li class="nav-item" id="spaceFiller"></li>
     </ul>
 
     <ul class="navbar-nav" id="leftNav">
       <li class="nav-item-text">
-        <a class="nav-link" id="download-link" href="#download">Download</a>
+        <a class="nav-link" id="download-link" href="#download-section">Download</a>
       </li>
       <li class="nav-item-text">
         <a class="nav-link" id="meet-link" href="#team">Meet the Team</a>
       </li>
       <li>
         <a href="https://github.com/team-reactype/ReacType" target="_blank">
-          <img class="nav-icon" src="./images/GitHub-Mark-Light-120px-plus.png">
+          <img class="nav-icon-gh mt-2" src="./images/GitHub-Mark-Light-120px-plus.png">
+        </a>
+      </li>
+      <li>
+        <a href="https://www.linkedin.com/company/reactype">
+          <img class="nav-icon-li mr-3 mt-2" src="./images/In-White-128.png" alt="bh linkedIn" >
         </a>
       </li>
     </ul>
   </nav>
+  <!-- end of navbar -->
+   
+  <!-- header -->
 
-  <div id="fullCarousel" name="fullCarousel" class="flex-container">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-        <li data-target="#demo" data-slide-to="3"></li>
-        <li data-target="#demo" data-slide-to="4"></li>
-        <li data-target="#demo" data-slide-to="5"></li>
-      </ul>
-
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/Main.png" alt="Los Angeles" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/ApplicationTree.png" alt="Chicago" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/Canvas-parent-child.resuable.png" alt="New York" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/CodePreview.png" alt="New York" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/HTML.png" alt="New York" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/Props.png" alt="New York" width="1100" height="500" />
-        </div>
+  <header style='background-color: #282c34; padding: 5rem 0'>
+    <div id='header' class='d-flex justify-content-around' >
+      <div id="header-texts">
+        <h3 class="text-center text-light">
+        A visual prototyping tool for React developers
+      </h3>
+      <p class="mb-2 mt-4 text-center" style='color: #c5c3c3'>
+        comprehensive type checking with <strong style="color: #fff; opacity: 0.9">Typescript</strong> 
+      </p>
+      <p class="text-center" style='color: #c5c3c3'>
+        and flexible exporting in <em style="color: #FDB849; opacity: 0.9">classic React</em>, <em style="color: #FDB849; opacity: 0.9">Next.js</em>, or <em style="color: #FDB849; opacity: 0.9">Gatsby.js</em>
+      </p>
+      <div id="header-buttons" class="text-center mt-5">
+        <button type="button" class="btn btn-info">Download Now</button>
+        <button type="button" class="btn btn-link text-info">Take the Tutorial <i class="bi bi-chevron-double-right"></i></button>
+        
       </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
+      </div>
+      <h1 class="display-3 align-self-center" style='color:rgb(77, 206, 211)'>
+        <strong>ReacType</strong>
+      </h1>
+      
+      
     </div>
-    <!-- end of carousel -->
-  </div>
-  <!-- end of carousel -->
+  </header>
+  <!-- end of header -->
 
   <!-- Download section -->
-  <section name="download" class="download" id="download">
+  <div class="download-section" id="download-section">
     <h1 class="section-title">Download ReacType</h1>
     <div class="download-buttons">
-      <div class="download-button">
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Mac.Version.1.0">
-          <button class="btn-primary" style="border-radius:5px">Download for Mac</button>
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.4.0.0" style="text-decoration: none;">
+          <button class="btn-primary" style="border-radius:5px">Mac</button>
         </a>
-      </div>
-      <div class="download-button">
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Win.Version.1.0">
-          <button class="btn-primary" style="border-radius:5px">Download for Windows</button>
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.4.0.0" style="text-decoration: none;">
+          <button class="btn-primary" style="border-radius:5px">Windows</button>
         </a>
-      </div>
-      <div class="download-button">
-        <a href="https://github.com/team-reactype/ReacType/releases/tag/Linux.Version.1.0">
-          <button class="btn-primary" style="border-radius:5px">Download for Linux</button>
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.4.0.0" style="text-decoration: none;">
+          <button class="btn-primary" style="border-radius:5px">Linux</button>
         </a>
-      </div>
-    </div>
-  </section>
-  <!-- end of dowload section -->
-  <!-- team section -->
-  <div class="team-div">
-    <section name="team" class="team-header">
-      <div class="section-title-div">
-        <h1 class="section-title">Meet Our Team</h1>
-      </div>
-    </section>
-    <div class="team container-fluid" id="team" class="team">
-      <div class="row">
-        <div class="col-sm">
-          <!-- <img src="./images/T.jpg" alt="" height="200px" class="team-images"> -->
-          </br>
-          <div>
-            <h5 class="team-name">Tolga Mizrakci
-              <a href="https://github.com/tolgamizrakci" target="_blank" class="team-links">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="tolga mizrakci github" height="16px">
-              </a>
-              <a href="https://linkedin.com/in/tolga-mizrakci" target="_blank" class="team-links">
-                <img src="./images/In-White-128.png" alt="tolga Mizrakci linkedIn" height="16px">
-              </a>
-            </h5>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <!-- <img src="./images/A.jpg" alt="Adam" height="200px" class="team-images"> -->
-          <br />
-          <div>
-            <h5 class="team-name">Adam Singer
-              <a href="https://github.com/spincycle01" target="_blank" class="team-links">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Adam Singer github" height="16px">
-              </a>
-              <a href="https://linkedin.com/in/adsing" target="_blank" class="team-links">
-                <img src="./images/In-White-128.png" alt="Adam Singer linkedIn" height="16px">
-              </a>
-            </h5>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <!-- <img src="./images/C.jpg" alt="Christian" height="200px" class="team-images"> -->
-          <br />
-          <div>
-            <h5 class="team-name">Christian Padilla
-              <a href="https://github.com/ChristianEdwardPadilla" target="_blank" class="team-links">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Christian Padilla github test" height="16px">
-              </a>
-              <a href="https://linkedin.com/in/ChristianEdwardPadilla" target="_blank" class="team-links">
-                <img src="./images/In-White-128.png" alt="Christian Padilla linkedIn" height="16px">
-              </a>
-            </h5>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <!-- <img src="./images/S.jpg" alt="Shlomo" height="200px" class="team-images"> -->
-          <br>
-          <div>
-            <h5 class="team-name">Shlomo Porges
-              <a href="https://github.com/ShlomoPorges" target="_blank" class="team-links">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="Shlomo Porges github" height="16px">
-              </a>
-              <a href="https://linkedin.com/in/shlomoporges" target="_blank" class="team-links">
-                <img src="./images/In-White-128.png" alt="Shlomo Porges linkedIn" height="16px">
-              </a>
-            </h5>
-          </div>
-        </div>
-      </div>
-      <br>
     </div>
   </div>
+  <!-- end of download section -->
+
+  
+ 
+  
 
 </body>
 

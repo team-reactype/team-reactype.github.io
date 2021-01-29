@@ -1,0 +1,136 @@
+  
+
+    
+    /* ********************************* */
+    /* NAVIGATION */
+    /* ********************************* */
+
+    /* .nav-logo-text {
+      left: 35%;
+      top: 15%;
+    }
+
+    .nav-logo-text:hover {
+      transition: all .3s ease-in-out;
+      transform: scale(1.3);
+      margin: 0 4px;
+    } */
+
+    /* github icon and linkedin icon */
+    .nav-icon-gh {
+      margin-right: 60px;
+    }
+    .nav-icon-gh, .nav-icon-li {
+      height: 1.5rem;
+      width: 1.5rem;
+      opacity: 0.9;
+      position: fixed;
+      right: 0px;
+      color: white;
+    }
+    .nav-icon-gh:hover, .nav-icon-li:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+    }
+   
+
+    /* download button to redirect to download buttons */
+     #download-link {
+      color: #FDB849;
+      opacity: 0.9;
+    }
+    #download-link:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+      letter-spacing: 4px;
+      margin: 0 4px;
+    }
+    /* meet the team button to redirect to team */
+     #meet-link {
+      color: #FDB849;
+      opacity: 0.9;
+    }
+    #meet-link:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+      letter-spacing: 1px;
+      margin: 0 4px;
+    } */
+
+    /* ********************************* */
+    /* DOWNLOAD */
+    /* ********************************* */
+
+    /* .download-section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      color: white;
+      background: linear-gradient(180deg, #001951 0%, #0082BD 100%);
+      padding: 5rem 0;
+    } */
+    /* download btn */
+    /* .btn-primary {
+      display: flex;
+      align-self: center;
+      justify-content: center;
+      margin: 8px;
+      height: 2.5rem;
+      width: 12rem;
+      padding-top: 5px;
+      background-color: #001951;
+      border-color: #000D35;
+      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(102, 75, 75, 0.19);
+      text-decoration: none;
+    }
+    .btn-primary:hover {
+      transition: all .5s ease-in-out;
+      transform: scale(1.2);
+      background-color: #009FC2;
+      border-color: #0082BD;
+      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+      letter-spacing: 4px;
+      text-decoration: none;
+    }
+    .download-buttons {
+      display: flex;
+      flex-direction: column;
+    }
+    a {
+      text-decoration: none;
+    } */ 
+
+   
+
+
+    /* ********************************* */
+    /* KEYFRAMES */
+    /* ********************************* */
+
+    @media screen and (max-width: 800px) {
+      .team-profiles {
+        flex-direction: column;
+      }
+
+      .nav-item-text {
+        display: none;
+      }
+
+      .nav-icon {
+        /* height: 24px;
+        width: 24px; */
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .team-div {
+        text-align: center;
+      }
+    }
+
+  
