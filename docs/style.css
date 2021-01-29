@@ -58,8 +58,14 @@
       transform: scale(1.2);
       letter-spacing: 1px;
       margin: 0 4px;
-    } */
-
+    } 
+    .footer-link {
+      color: rgb(199, 199, 199);
+    }
+    .footer-link:hover {
+      color: #FDB849;
+      text-decoration: none;
+    }
     /* ********************************* */
     /* DOWNLOAD */
     /* ********************************* */
