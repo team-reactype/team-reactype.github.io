@@ -32,15 +32,11 @@
 
     <ul class="navbar-nav" id="leftNav">
       <li class="nav-item-text">
-        <a class="nav-link" id="download-link" href="#download-section" >Download</a>
-      </li>
-      <li class="nav-item-text">
-        <a class="nav-link" id="meet-link" href="tutorial.html">Tutorial</a>
+        <a class="nav-link" id="download-link" href="index.html#download-section" >Download</a>
       </li>
       <li class="nav-item-text">
         <a class="nav-link" id="meet-link" href="#team">Meet the Team</a>
       </li>
-      
       <li>
         <a href="https://github.com/team-reactype/ReacType" target="_blank">
           <img class="nav-icon-gh mt-2" src="./images/GitHub-Mark-Light-120px-plus.png">
@@ -51,122 +47,23 @@
           <img class="nav-icon-li mr-3 mt-2" src="./images/In-White-128.png" alt="bh linkedIn" >
         </a>
       </li>
-      
     </ul>
   </nav>
   <!-- end of navbar -->
-   
-  <!-- header -->
 
-  <header style='background-color: #282c34; padding: 5rem 0'>
-    <div id='header' class='d-flex justify-content-around' >
-      <div id="header-texts">
-        <h3 class="text-center text-light">
-        A visual prototyping tool for React developers
-      </h3>
-      <p class="mb-2 mt-4 text-center" style='color: #c5c3c3'>
-        comprehensive type checking with <strong style="color: #fff; opacity: 0.9">Typescript</strong> 
-      </p>
-      <p class="text-center" style='color: #c5c3c3'>
-        and flexible exporting in <em style="color: #FDB849; opacity: 0.9">classic React</em>, <em style="color: #FDB849; opacity: 0.9">Next.js</em>, or <em style="color: #FDB849; opacity: 0.9">Gatsby.js</em>
-      </p>
-      <div id="header-buttons" class="text-center mt-5">
-        <a type="button" class="btn btn-info" href="#download-section">Download Now</a>
-        <a type="button" href="tutorial.html" class="btn btn-link text-info">Take the Tutorial <i class="bi bi-chevron-double-right"></i></a>
-        
-      </div>
-      </div>
-      <h1 class="display-3 align-self-center" style='color:rgb(77, 206, 211)'>
-        <strong>ReacType</strong>
-      </h1>
-      
-      
+<!-- start of tutorial -->
+
+<section id="tutorial">
+    <div class="container py-5">
+        <h3 class="display-3">Intro to <span style='color:rgb(77, 206, 211)'><strong>ReacType</strong></span></h3>
+        <hr width="50%" class="ml-0">
+        <p class="col-8 pl-0"><strong>Prerequisites:</strong> advanced knowledge in <em>HTML</em>, <em>CSS</em>, <em>React</em>, <em>Typescript</em>, <em>Quantum Physics</em>, <em>Organic Chemisty</em>, ... just kidding! Only your excitement to get started!</p>
     </div>
-  </header>
-  <!-- end of header -->
+</section>
 
-  <!-- About ReacType section -->
-  <div class="container mb-3" style="border-left: 4px solid #FDB849; height: 100px; "></div>
+<!-- end of tutorial -->
 
-  <section class="mb-5">
-    <div class="container pl-0">
-      <p style="font-size: 2rem;" class="mb-0"><em>About ReacType</em></p>
-      <div class="row">
-         
-        <p class="col-6 mt-3" style="color: #505050"><strong>ReacType</strong> is a prototyping tool that allows the user to visualize their application architecture dynamically, employing a drag-and-drop canvas display and a real-time component code preview. The user can create components and drag instances of these components, as well as HTML elements, onto the canvas. This architecture can then be exported as TypeScript files to be used as a starter template for any repository.</p>
-        <h4 class="display-4 col-6 text-right"><strong>What is ReacType?</strong> </h4>
-        
-      </div>
-    </div>
-  </section>
-  <!-- end of About section -->
-<!-- Download section -->
-  <section class="download-section container pt-5" id="download-section">
-    <p class="mb-0 text-center" style="font-size: 3rem;">Download ReacType</p>
-    <div class="download-buttons d-flex justify-content-between">
-       <div class="os col-3 text-center d-flex flex-column">
-        <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
-        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.3.0.0" style="text-decoration: none;">
-          <button class="btn btn-info btn-lg">macOS</button>
-        </a>
-        <p class="text-center mt-4">Ctrl + click the ReacType icon in Applications folder and select 'Open' from the context menu to run the app. </p>
-        <small class="text-muted text-center">* This extra step is necessary since we have not obtained an Apple developer license yet. *</small>
-       </div>
-        <div class="os col-3 text-center d-flex flex-column">
-          <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
-        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.4.0.0" style="text-decoration: none;">
-          <button class="btn btn-info btn-lg" >Windows</button>
-        </a>
-        <p class="text-center mt-4">Install the application by running ReacType Setup 4.0.0.exe.</p>
-        </div>
-        <div class="os col-3 text-center d-flex flex-column">
-          <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
-          <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.4.0.0" style="text-decoration: none;">
-          <button class="btn btn-info btn-lg" >Linux</button>
-        </a>
-        <p class="text-center mt-4">Run the application as a super user in order to read and write files.</p>
-        </div>
-    </div>
-  </section>
-  <!-- end of download section -->
-  <!-- features section -->
-  <section>
-    <div class="container my-5 py-5" style="box-shadow: 0 0 1.125rem 0.4375rem rgb(0 0 0 / 3%); background-color: #fff;">
-      <h1 class="h1 text-center">Features</h1>
-      <div id="features">
-
-        <div class="feature row mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./images/Props.png" alt="" width="100%" class="col-6">
-          <div class="text col-6">
-            <h3 class="h3 mt-3 ">Feature 1</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate repellendus blanditiis. Dolore, excepturi corporis facilis, aspernatur necessitatibus voluptatibus quas nemo ex hic, maiores accusantium quam quae quis illo non!</p>
-          </div>
-        </div>
-        <hr width="60%">
-
-        <div class="feature row mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./images/Main.png" alt="" width="100%" class="col-6">
-          <div class="text col-6">
-            <h3 class="h3 mt-3 ">Feature 2</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate repellendus blanditiis. Dolore, excepturi corporis facilis, aspernatur necessitatibus voluptatibus quas nemo ex hic, maiores accusantium quam quae quis illo non!</p>
-          </div>
-        </div>
-        <hr width="60%">
-
-        <div class="feature row mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./images/HTML.png" alt="" width="100%" class="col-6">
-          <div class="text col-6">
-            <h3 class="h3 mt-3 ">Feature 3</h3>
-            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Iusto cupiditate repellendus blanditiis. Dolore, excepturi corporis facilis, aspernatur necessitatibus voluptatibus quas nemo ex hic, maiores accusantium quam quae quis illo non!</p>
-          </div>
-        </div>
-        
-
-      </div>
-    </div>
-  </section>
-  <!-- end of features section -->
-
+<!-- start of footer -->
   <footer style="background-color:#1a1d24;">
     <div class="container d-flex py-5">
       <div id="footer-reactype" class="d-flex flex-column col-4">
