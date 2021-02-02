@@ -6,464 +6,373 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <title>ReacType</title>
+   <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
+  
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
-  <style>
 
-    /* Make the image fully responsive */
-    .carousel-inner img {
-      width: 100%;
-      height: 100%;
-    }
-
-    #fullCarousel {
-      /* opacity: 0.1; */
-    }
-
-    .flex-container {
-      display: flex;
-      justify-content: center;
-      background-image: url('rtw.gif');
-      background-repeat: no-repeat;
-      background-size: cover;
-    }
-    /* .flex-container>div {
-      width: 100%;
-      margin: 10px;
-      text-align: center;
-    } */
-
-    /* ********************************* */
-    /* NAVIGATION */
-    /* ********************************* */
-
-    .nav-logo-text {
-      left: 35%;
-      top: 15%;
-    }
-
-    .nav-logo-text:hover {
-      transition: all .3s ease-in-out;
-      transform: scale(1.3);
-      margin: 0 4px;
-    }
-
-    /* github icon */
-    .nav-icon-gh {
-      height: 2rem;
-      width: 2rem;
-      opacity: 0.75;
-      position: fixed;
-      right: 0px;
-      margin-right: 65px;
-      color: white;
-    }
-    .nav-icon-gh:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.5);
-    }
-    /* linkedin icon */
-    .nav-icon-li {
-      height: 2rem;
-      width: 2rem;
-      opacity: 0.75;
-      position: fixed;
-      right: 0px;
-      margin-right: 25px;
-      color: white;
-    }
-    .nav-icon-li:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.5);
-    }
-    .navbar-brand:hover {
-      transition: all .3s ease-in-out;
-      transform: scale(1.5);
-      margin: 0 4px;
-    }
-
-    /* download button to redirect to download buttons */
-    #download-link {
-      color: white;
-      opacity: .5;
-    }
-    #download-link:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.2);
-      letter-spacing: 4px;
-      margin: 0 4px;
-    }
-    /* meet the team button to redirect to team */
-    #meet-link {
-      color: white;
-      opacity: .5;
-    }
-    #meet-link:hover {
-      opacity: 1;
-      transition: all .3s ease-in-out;
-      transform: scale(1.2);
-      letter-spacing: 1px;
-      margin: 0 4px;
-    }
-
-    /* ********************************* */
-    /* DOWNLOAD */
-    /* ********************************* */
-
-    .download-section {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      color: white;
-      background: linear-gradient(180deg, #001951 0%, #0082BD 100%);
-      padding: 5rem 0;
-    }
-    /* download btn */
-    .btn-primary {
-      display: flex;
-      align-self: center;
-      justify-content: center;
-      margin: 8px;
-      height: 2.5rem;
-      width: 12rem;
-      padding-top: 5px;
-      background-color: #001951;
-      border-color: #000D35;
-      box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(102, 75, 75, 0.19);
-      text-decoration: none;
-    }
-    .btn-primary:hover {
-      transition: all .5s ease-in-out;
-      transform: scale(1.2);
-      background-color: #009FC2;
-      border-color: #0082BD;
-      box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
-      letter-spacing: 4px;
-      text-decoration: none;
-    }
-    .download-buttons {
-      display: flex;
-      flex-direction: column;
-    }
-    a {
-      text-decoration: none;
-    }
-
-    /* ********************************* */
-    /* TEAM */
-    /* ********************************* */
-
-    .team-div {
-      background-image: linear-gradient(180deg, #0082BD 0%, #5AD2C8 100%);
-      color: white;
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .team-header {
-      padding: 2rem 0;
-    }
-    .team-name {
-      font-size: 25px;
-    }
-    .team-name:hover {
-      transition: all .5s ease-in-out;
-      transform: scale(1.5);
-      color: #001951;
-      letter-spacing: 2px;
-    }
-    .col-sm {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .team-links {
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    /* opacity: 0.95; */
-    }
-
-    .gh-link {
-      margin: 6px;
-    }
-    .gh-link:hover {
-      opacity: 1.0;
-      transition: all .5s ease-in-out;
-      transform: scale(1.4);
-      color: #004AB1;
-    }
-
-    .li-link:hover {
-      opacity: 1.0;
-      transition: all .5s ease-in-out;
-      transform: scale(1.4);
-    }
-
-    /* ********************************* */
-    /* OTHER TEAM */
-    /* ********************************* */
-    .other-team {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-    }
-    .past-teams {
-      display: flex;
-      justify-content: center;
-    }
-    #team {
-      color: white;
-      opacity: .75;
-    }
-    #team:hover {
-      opacity: 1;
-    }
-    .other-team-header {
-      margin: 4rem 0 10px 0;
-    }
-
-    /* ********************************* */
-    /* KEYFRAMES */
-    /* ********************************* */
-
-    @media screen and (max-width: 800px) {
-      .team-profiles {
-        flex-direction: column;
-      }
-
-      .nav-item-text {
-        display: none;
-      }
-
-      .nav-icon {
-        /* height: 24px;
-        width: 24px; */
-        position: absolute;
-        top: 50%;
-        -ms-transform: translateY(-50%);
-        transform: translateY(-50%);
-      }
-
-      .team-div {
-        text-align: center;
-      }
-    }
-
-  </style>
 </head>
 
 <body>
-  <!-- header -->
-  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style='background-color: #000D35;'>
-    <a class="navbar-brand" href="#fullCarousel" name="brand"><img src="./images/512x512.png" height="40px"></a>
+  <!-- navbar -->
+  <nav class="navbar navbar-expand-sm navbar-dark sticky-top" style='background-color: #1a1d24;'>
+    <a class="navbar-brand mr-0" name="brand"><img src="./images/512x512.png" height="30px"></a>
+
     <ul class="navbar-nav">
       <li class="nav-logo-text">
-        <a class="nav-link" href="https://github.com/team-reactype/ReacType">
+        <a class="nav-link" href="index.html">
           <img src="./images/logo-text.png" height="32px"></a>
       </li>
-      <li class="nav-item" id="spaceFiller"></li>
     </ul>
 
     <ul class="navbar-nav" id="leftNav">
       <li class="nav-item-text">
-        <a class="nav-link" id="download-link" href="#download-section">Download</a>
+        <a class="nav-link" id="download-link" href="#download-section" >Download</a>
+      </li>
+      <li class="nav-item-text">
+        <a class="nav-link" id="meet-link" href="tutorial.html">Tutorial</a>
       </li>
       <li class="nav-item-text">
         <a class="nav-link" id="meet-link" href="#team">Meet the Team</a>
       </li>
+      
       <li>
         <a href="https://github.com/team-reactype/ReacType" target="_blank">
-          <img class="nav-icon-gh" src="./images/GitHub-Mark-Light-120px-plus.png">
+          <img class="nav-icon-gh mt-2" src="./images/GitHub-Mark-Light-120px-plus.png">
         </a>
       </li>
       <li>
         <a href="https://www.linkedin.com/company/reactype">
-          <img class="nav-icon-li" src="./images/In-White-128.png" alt="bh linkedIn" >
+          <img class="nav-icon-li mr-3 mt-2" src="./images/In-White-128.png" alt="bh linkedIn" >
         </a>
       </li>
+      
     </ul>
   </nav>
+  <!-- end of navbar -->
+   
+  <!-- header -->
 
-  <div id="fullCarousel" name="fullCarousel" class="flex-container">
-    <div id="demo" class="carousel slide" data-ride="carousel">
-      <!-- Indicators -->
-      <ul class="carousel-indicators">
-        <li data-target="#demo" data-slide-to="0" class="active"></li>
-        <li data-target="#demo" data-slide-to="1"></li>
-        <li data-target="#demo" data-slide-to="2"></li>
-        <li data-target="#demo" data-slide-to="3"></li>
-        <li data-target="#demo" data-slide-to="4"></li>
-      </ul>
-
-      <!-- The slideshow -->
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <img src="./images/Main.png" alt="Los Angeles" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/ApplicationTree.png" alt="Chicago" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/Canvas.png" alt="New York" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/CodePreview.png" alt="New York" width="1100" height="500" />
-        </div>
-        <div class="carousel-item">
-          <img src="./images/Tutorial.png" alt="New York" width="1100" height="500" />
-        </div>
-      </div>
-
-      <!-- Left and right controls -->
-      <a class="carousel-control-prev" href="#demo" data-slide="prev">
-        <span class="carousel-control-prev-icon"></span>
-      </a>
-      <a class="carousel-control-next" href="#demo" data-slide="next">
-        <span class="carousel-control-next-icon"></span>
-      </a>
-    </div>
-    <!-- end of carousel -->
-  </div>
-  <!-- end of carousel -->
-
-  <!-- Download section -->
-  <div class="download-section" id="download-section">
-    <h1 class="section-title">Download ReacType</h1>
-    <div class="download-buttons">
-        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.4.0.0" style="text-decoration: none;">
-          <button class="btn-primary" style="border-radius:5px">Mac</button>
-        </a>
-        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.4.0.0" style="text-decoration: none;">
-          <button class="btn-primary" style="border-radius:5px">Windows</button>
-        </a>
-        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.4.0.0" style="text-decoration: none;">
-          <button class="btn-primary" style="border-radius:5px">Linux</button>
-        </a>
-    </div>
-  </div>
-  <!-- end of download section -->
-  <!-- Team section -->
-  <div class="team-div">
-    <section name="team" class="team-header">
-      <div class="section-title-div">
-        <h1 class="section-title">Meet Our Team</h1>
-      </div>
-    </section>
-    <div class="team container-fluid" id="team" class="team">
-      <div class="row">
+  <header style='background-color: #282c34; padding: 5rem 0'>
+    <div id='header' class='d-flex justify-content-around' >
+      <div id="header-texts">
+        <h3 class="text-center text-light">
+        A visual prototyping tool for React developers
+      </h3>
+      <p class="mb-2 mt-4 text-center" style='color: #c5c3c3'>
+        comprehensive type checking with <strong style="color: #fff; opacity: 0.9">Typescript</strong> 
+      </p>
+      <p class="text-center" style='color: #c5c3c3'>
+        and flexible exporting in <em style="color: #FDB849; opacity: 0.9">classic React</em>, <em style="color: #FDB849; opacity: 0.9">Next.js</em>, or <em style="color: #FDB849; opacity: 0.9">Gatsby.js</em>
+      </p>
+      <div id="header-buttons" class="text-center mt-5">
+        <a type="button" class="btn btn-info" href="#download-section">Download Now</a>
+        <a type="button" href="tutorial.html" class="btn btn-link text-info">Take the Tutorial <i class="bi bi-chevron-double-right"></i></a>
         
-        <div class="col-sm">
-          </br>
-          <div>
-            <h5 class="team-name">Brian Han</h5>
-            <div class="team-links">
-              <a href="https://github.com/brianjshan" target="_blank" class="gh-link">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="bh github" height="40px">
-              </a>
-              <a href="https://www.linkedin.com/in/brianjisoohan/i" target="_blank" class="li-link">
-                <img src="./images/In-White-128.png" alt="bh linkedIn" height="40px">
-              </a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <br />
-          <div>
-            <h5 class="team-name">Diego Vazquez</h5>
-            <div class="team-links">
-              <a href="https://github.com/diegovazquezny" target="_blank" class="gh-link">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="dv github" height="40px">
-              </a>
-              <a href="https://www.linkedin.com/in/diegovazquezny/" target="_blank" class="li-link">
-                <img src="./images/In-White-128.png" alt="dv linkedIn" height="40px">
-              </a>
-              </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <br />
-          <div>
-            <h5 class="team-name">Jin Soo Lim</h5>
-            <div class="team-links">
-              <a href="https://github.com/jinsoolim" target="_blank" class="gh-link">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="jl github test" height="40px">
-              </a>
-              <a href="https://www.linkedin.com/in/jin-soo-lim-3a567b1b3/" target="_blank" class="li-link">
-                <img src="./images/In-White-128.png" alt="jl linkedIn" height="40px">
-              </a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-sm">
-          <br>
-          <div>
-            <h5 class="team-name">Stormi Hashimoto</h5>
-            <div class="team-links">
-              <a href="https://github.com/stormikph" target="_blank" class="gh-link">
-                <img src="./images/GitHub-Mark-Light-120px-plus.png" alt="sh github" height="40px">
-              </a>
-              <a href="https://www.linkedin.com/in/stormikph/" target="_blank" class="li-link">
-                <img src="./images/In-White-128.png" alt="sh linkedIn" height="40px">
-              </a>
-            </div>
-          </div>
-        </div>
       </div>
-      <!-- Start of past contributors  -->
-      <div class="other-team">
-        <div class="other-team-header">
-          <h2>Other Contributors</h2>
-        </div>
-
-        <div class="past-teams">
-          <ul class="team-one" style="list-style-type: none;" >
-            <li><a href="https://linkedin.com/in/adsing" id="team" style="text-decoration: none;">Adam Singer</a></li>
-            <li><a href="https://linkedin.com/in/ChristianEdwardPadilla" id="team" style="text-decoration: none;">Christian Padilla</a></li>
-            <li><a href="https://linkedin.com/shlomoporges" id="team" style="text-decoration: none;">Shlomo Porges  </a></li>
-            <li><a href="https://linkedin.com/in/tolga-mizrakci" id="team" style="text-decoration: none;">Tolga Mizrakci</a></li>
-          </ul>
-
-          <ul class="team-two" style="list-style-type:none;">
-            <li><a href="https://www.linkedin.com/in/chelsey-fewer/" id="team" style="text-decoration: none;">Chelsea Fewer</a></li>
-            <li><a href="https://www.linkedin.com/in/charles-finocchiaro-62440040/" id="team" style="text-decoration: none;">Charles Finocchiaro</a></li>
-            <li><a href="https://www.linkedin.com/in/sophia-huttner-68315975/" id="team" style="text-decoration: none;">Sophia Huttner</a></li>
-            <li><a href="https://www.linkedin.com/in/misevere/" id="team" style="text-decoration: none;">Mitchel Severe</a></li>
-            <li><a href="https://www.linkedin.com/in/vicknatalie/" id="team" style="text-decoration: none;">Natalie Vick</a></li>
-          </ul>
-
-          <ul class="team-three" style="list-style-type:none;">
-            <li><a href="https://www.linkedin.com/in/akbuma" id="team" style="text-decoration: none;">Aaron Bumanglag</a></li>
-            <li><a href="https://www.linkedin.com/in/andrewjcho84/" id="team" style="text-decoration: none;">Andrew Cho</a></li>
-            <li><a href="https://www.linkedin.com/in/fredochen/" id="team" style="text-decoration: none;">Fredo Chen</a></li>
-            <li><a href="https://www.linkedin.com/in/tyler-sullberg" id="team" style="text-decoration: none;">Tyler Sullberg</a></li>
-          </ul>
-
-          <ul class="team-four" style="list-style-type:none;">
-            <li><a href="https://linkedin.com/in/ibeeliot" id="team" style="text-decoration: none;">Eliot Nguyen</a></li>
-            <li><a href="https://linkedin.com/in/jesse-zuniga" id="team" style="text-decoration: none;">Jesse Zuniga</a></li>
-            <li><a href="https://linkedin.com/in/tony-ito-cole" id="team" style="text-decoration: none;">Tony Ito-cole</a></li>
-          </ul>
-        </div>
       </div>
-      <!-- End of past contributors  -->
-      <br>
+      <h1 class="display-3 align-self-center" style='color:rgb(77, 206, 211)'>
+        <strong>ReacType 5.0</strong>
+      </h1>
+      
+      
     </div>
-  </div>
+  </header>
+  <!-- end of header -->
 
+  <!-- About ReacType section -->
+  <div class="container mb-3" style="border-left: 4px solid #FDB849; height: 100px; "></div>
+
+  <section class="mb-5">
+    <div class="container pl-0">
+      <p style="font-size: 2rem;" class="mb-0"><em>About ReacType</em></p>
+      <div class="row">
+         
+        <p class="col-6 mt-3" style="color: #505050"><strong>ReacType</strong> is a prototyping tool that allows the user to visualize their application architecture dynamically, employing a drag-and-drop canvas display and a real-time component code preview. The user can create components and drag instances of these components, as well as HTML elements, onto the canvas. This architecture can then be exported as TypeScript files to be used as a starter template for any repository.</p>
+        <h4 class="display-4 col-6 text-right"><strong>What is ReacType?</strong> </h4>
+        
+      </div>
+    </div>
+  </section>
+  <!-- end of About section -->
+<!-- Download section -->
+  <section class="download-section container pt-5" id="download-section">
+    <p class="mb-0 text-center" style="font-size: 3rem;">Download ReacType</p>
+    <div class="download-buttons d-flex justify-content-between">
+       <div class="os col-3 text-center d-flex flex-column">
+        <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.5.0.0" style="text-decoration: none;">
+          <button class="btn btn-info btn-lg">macOS</button>
+        </a>
+        <p class="text-center mt-4">Ctrl + click the ReacType icon in Applications folder and select 'Open' from the context menu to run the app. </p>
+        <small class="text-muted text-center">* This extra step is necessary since we have not obtained an Apple developer license yet. *</small>
+       </div>
+        <div class="os col-3 text-center d-flex flex-column">
+          <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
+        <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.5.0.0" style="text-decoration: none;">
+          <button class="btn btn-info btn-lg" >Windows</button>
+        </a>
+        <p class="text-center mt-4">Install the application by running ReacType Setup 4.0.0.exe.</p>
+        </div>
+        <div class="os col-3 text-center d-flex flex-column">
+          <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
+          <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.5.0.0" style="text-decoration: none;">
+          <button class="btn btn-info btn-lg" >Linux</button>
+        </a>
+        <p class="text-center mt-4">Run the application as a super user in order to read and write files.</p>
+        </div>
+    </div>
+  </section>
+  <!-- end of download section -->
+  <!-- features section -->
+  <section>
+    <div class="container my-5 py-5" style="box-shadow: 0 0 1.125rem 0.4375rem rgb(0 0 0 / 3%); background-color: #fff;">
+      <h1 class="h1 text-center">Features</h1>
+      <div id="features">
+
+        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/167850683/original/18f31710603c7de14992440e6e9a61bf7ebec5f4/create-serverside-rendered-using-react-gatsby-and-nextjs.jpg" alt="" width="100%" class="col-4">
+          <div class="text col-6">
+            <h3 class="h3 mt-3 ">Compatibility With Next.js and Gatsby.js</h3>
+            <p>Prototype React components compatible with Gatsby.js and Next.js applications to take advantage of server-side rendering and other features of these popular frameworks</p>
+          </div>
+        </div>
+        <hr width="60%">
+
+        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="./screenshots/dark-mode.png" alt="" width="100%" class="col-4">
+          <div class="text col-6">
+            <h3 class="h3 mt-3 ">Dark Mode</h3>
+            <p>Modernized and cleaner UI, including enhanced dark mode for improved user experience</p>
+          </div>
+        </div>
+        <hr width="60%">
+
+        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="https://miro.medium.com/max/1200/1*zDnLT3oYVHsvrwL2QUL_rA.png" alt="" width="100%" class="col-4">
+          <div class="text col-6">
+            <h3 class="h3 mt-3 ">D3 Visualization</h3>
+            <p>View dynamically created components/HTML elements in the component tree</p>
+          </div>
+        </div>
+        
+
+      </div>
+    </div>
+  </section>
+  <!-- end of features section -->
+
+  <footer style="background-color:#1a1d24;">
+    <div class="container d-flex py-5">
+      <div id="footer-reactype" class="d-flex flex-column col-4">
+        <div class="ml-5 pl-5 pt-3">
+          <img src="./images/512x512.png" height="70px">
+        </div>
+        <h1 class="display-4 mb-3" style='color:rgb(77, 206, 211)'><strong>ReacType</strong></h1>
+        <small class="text-muted">Copyright &#169; ReacType 2021</small>
+      </div>
+      <div id="footer-contributors" class='col-6'>
+        <h5 class="text-muted mt-2 mb-5">CONTRIBUTORS</h5>
+        <div id="team" class="d-flex">
+          <div id="contributors-left" class="mr-5">
+        <div class="contributor mb-3">
+          <a href="https://github.com/akbuma" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/akbuma" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Aaron Bumanglag</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/spincycle01" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://linkedin.com/in/adsing" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Adam Singer</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/aw2934" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/alex-wolinsky-80ab591b2/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Alex Wolinsky</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/andrewjcho84" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/andrewjcho84/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Andrew Cho</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/brianjshan" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/brianjisoohan/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Brian Han</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/null267" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/charles-finocchiaro-62440040/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Charles Finocchiaro</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/chelseyeslehc" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chelsey-fewer/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Chelsea Fewer</a>
+        </div>
+
+         <div class="contributor mb-3">
+          <a href="https://github.com/ChristianEdwardPadilla" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://linkedin.com/in/ChristianEdwardPadilla" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Christian Padilla</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/diegovazquezny" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/diegovazquezny/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Diego Vazquez</a>
+        </div>
+
+         <div class="contributor mb-3">
+          <a href="https://github.com/ibeeliot" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ibeeliot" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Eliot Nguyen</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/fredosauce" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/fredochen/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Fredo Chen</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/jzuniga206" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jesse-zuniga" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Jesse Zuniga</a>
+        </div>
+          </div>
+
+         <div id="contributors-right">
+           <div class="contributor mb-3">
+          <a href="https://github.com/jinsoolim" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jin-soo-lim-3a567b1b3/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Jin Soo Lim</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/yutingwu4" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/jwuarchitect/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Julie Wu</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/linhatran" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/linhatran" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Linh Tran</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/lukemadden" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/lukemadden/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Luke Madden</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/mitchelsevere" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/misevere/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Mitchel Severe</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/natattackvick" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/vicknatalie/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Natalie Vick</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/sean1292" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/sean-sadykoff/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Sean Sadykoff</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/ShlomoPorges" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://linkedin.com/shlomoporges" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Shlomo Porges</a>
+        </div>
+
+         <div class="contributor mb-3">
+          <a href="https://github.com/stormikph" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/stormikph/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Stormi Hashimoto</a>
+        </div>
+
+         <div class="contributor mb-3">
+          <a href="https://github.com/tolgamizrakci" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://linkedin.com/in/tolga-mizrakci" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Tolga Mizrakci</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/tonyito" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tony-ito-cole" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Tony Ito-cole</a>
+        </div>
+         
+        <div class="contributor mb-3">
+          <a href="https://github.com/tsully" target="_blank" class=" footer-link" style="text-decoration: none;">
+                <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/tyler-sullberg" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Tyler Sullberg</a>
+        </div>
+
+      </div>
+
+         </div>
+      </div>
+
+      <div id="footer-oslabs">
+        <img src="https://opensourcelabs.io/images/oslabs-white.png" alt="oslabs logo" width="130px" class="mt-2">
+       
+        <div class="mt-3">
+          <a href="https://opensourcelabs.io/" class="text-light my-3 text-end"><em>opensourcelabs.io</em></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+  
+ 
+  
+<script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+
+  </script>
+  
 </body>
 
 </html>
