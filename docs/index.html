@@ -59,9 +59,9 @@
   <!-- header -->
 
   <header style='background-color: #282c34; padding: 5rem 0'>
-    <div id='header' class='d-flex justify-content-around' >
+    <div id='header' class='d-flex flex-sm-row flex-column-reverse justify-content-sm-around' >
       <div id="header-texts">
-        <h3 class="text-center text-light">
+        <h3 class="text-center text-light mt-5">
         A visual prototyping tool for React developers
       </h3>
       <p class="mb-2 mt-4 text-center" style='color: #c5c3c3'>
@@ -76,7 +76,7 @@
         
       </div>
       </div>
-      <h1 class="display-3 align-self-center" style='color:rgb(77, 206, 211)'>
+      <h1 class="display-3 align-self-center text-center" style='color:rgb(77, 206, 211)'>
         <strong>ReacType 5.0</strong>
       </h1>
       
@@ -86,15 +86,15 @@
   <!-- end of header -->
 
   <!-- About ReacType section -->
-  <div class="container mb-3" style="border-left: 4px solid #FDB849; height: 100px; "></div>
+  <div class="container mb-3 d-none d-sm-flex" style="border-left: 4px solid #FDB849; height: 100px; "></div>
 
   <section class="mb-5">
     <div class="container pl-0">
-      <p style="font-size: 2rem;" class="mb-0"><em>About ReacType</em></p>
-      <div class="row">
+      <p style="font-size: 2rem;" class="mb-0 text-center text-sm-left mt-5 mt-sm-0"><em>About ReacType</em></p>
+      <div class="d-flex flex-sm-row flex-column-reverse">
          
-        <p class="col-6 mt-3" style="color: #505050"><strong>ReacType</strong> is a prototyping tool that allows the user to visualize their application architecture dynamically, employing a drag-and-drop canvas display and a real-time component code preview. The user can create components and drag instances of these components, as well as HTML elements, onto the canvas. This architecture can then be exported as TypeScript files to be used as a starter template for any repository.</p>
-        <h4 class="display-4 col-6 text-right"><strong>What is ReacType?</strong> </h4>
+        <p class="col-sm-6 mt-3 pl-sm-0 text-sm-left text-center" style="color: #505050"><strong>ReacType</strong> is a prototyping tool that allows the user to visualize their application architecture dynamically, employing a drag-and-drop canvas display and a real-time component code preview. The user can create components and drag instances of these components, as well as HTML elements, onto the canvas. This architecture can then be exported as TypeScript files to be used as a starter template for any repository.</p>
+        <h4 class="display-4 d-sm-flex d-none col-sm-6 col-12 text-sm-right text-center"><strong>What is ReacType?</strong> </h4>
         
       </div>
     </div>
@@ -103,8 +103,8 @@
 <!-- Download section -->
   <section class="download-section container pt-5" id="download-section">
     <p class="mb-0 text-center" style="font-size: 3rem;">Download ReacType</p>
-    <div class="download-buttons d-flex justify-content-between">
-       <div class="os col-3 text-center d-flex flex-column">
+    <div class="download-buttons d-flex flex-sm-row justify-content-sm-between flex-column">
+       <div class="os col-12 col-sm-3 text-center d-flex flex-column">
         <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
         <a href="https://github.com/open-source-labs/ReacType/releases/tag/Mac.5.0.0" style="text-decoration: none;">
           <button class="btn btn-info btn-lg">macOS</button>
@@ -112,14 +112,14 @@
         <p class="text-center mt-4">Ctrl + click the ReacType icon in Applications folder and select 'Open' from the context menu to run the app. </p>
         <small class="text-muted text-center">* This extra step is necessary since we have not obtained an Apple developer license yet. *</small>
        </div>
-        <div class="os col-3 text-center d-flex flex-column">
+        <div class="os col-sm-3 col-12 text-center d-flex flex-column">
           <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
         <a href="https://github.com/open-source-labs/ReacType/releases/tag/Windows.5.0.0" style="text-decoration: none;">
           <button class="btn btn-info btn-lg" >Windows</button>
         </a>
         <p class="text-center mt-4">Install the application by running ReacType Setup 5.0.0.exe.</p>
         </div>
-        <div class="os col-3 text-center d-flex flex-column">
+        <div class="os col-sm-3 col-12 text-center d-flex flex-column">
           <i class="bi bi-cloud-arrow-down" style="font-size: 7rem; color: rgb(170, 170, 170)"></i>
           <a href="https://github.com/open-source-labs/ReacType/releases/tag/Linux.5.0.0" style="text-decoration: none;">
           <button class="btn btn-info btn-lg" >Linux</button>
@@ -135,27 +135,27 @@
       <h1 class="h1 text-center">Features</h1>
       <div id="features">
 
-        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/167850683/original/18f31710603c7de14992440e6e9a61bf7ebec5f4/create-serverside-rendered-using-react-gatsby-and-nextjs.jpg" alt="" width="100%" height="auto" class="col-4">
-          <div class="text col-6">
+        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="https://fiverr-res.cloudinary.com/images/q_auto,f_auto/gigs/167850683/original/18f31710603c7de14992440e6e9a61bf7ebec5f4/create-serverside-rendered-using-react-gatsby-and-nextjs.jpg" alt="" width="100%" height="auto" class="col-sm-4 col-12">
+          <div class="text col-sm-6 col-12 text-center text-sm-left">
             <h3 class="h3 mt-3 ">Compatibility With Next.js and Gatsby.js</h3>
             <p>Prototype React components compatible with Gatsby.js and Next.js applications to take advantage of server-side rendering and other features of these popular frameworks</p>
           </div>
         </div>
         <hr width="60%">
 
-        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./screenshots/dark-mode.png" alt="" width="100%" height="auto" class="col-4">
-          <div class="text col-6">
+        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="./screenshots/dark-mode.png" alt="" width="100%" height="auto" class="col-sm-4 col-12">
+          <div class="text col-sm-6 col-12 text-center text-sm-left">
             <h3 class="h3 mt-3 ">Dark Mode</h3>
             <p>Modernized and cleaner UI, including enhanced dark mode for improved user experience</p>
           </div>
         </div>
         <hr width="60%">
 
-        <div class="feature row justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="https://miro.medium.com/max/1200/1*zDnLT3oYVHsvrwL2QUL_rA.png" alt="" width="100%" height="auto" class="col-4">
-          <div class="text col-6">
+        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="https://miro.medium.com/max/1200/1*zDnLT3oYVHsvrwL2QUL_rA.png" alt="" width="100%" height="auto" class="col-sm-4 col-12">
+          <div class="text col-sm-6 col-12 text-center text-sm-left">
             <h3 class="h3 mt-3 ">D3 Visualization</h3>
             <p>View dynamically created components/HTML elements in the component tree</p>
           </div>
@@ -168,16 +168,16 @@
   <!-- end of features section -->
 
   <footer style="background-color:#1a1d24;">
-    <div class="container d-flex py-5">
-      <div id="footer-reactype" class="d-flex flex-column col-4">
-        <div class="ml-5 pl-5 pt-3">
+    <div class="container d-flex flex-sm-row flex-column-reverse py-5">
+      <div id="footer-reactype" class="d-flex flex-column col-sm-4 col-12 mt-5 mt-sm-0">
+        <div class="ml-sm-5 pl-sm-5 pt-sm-3 mx-auto">
           <img src="./images/512x512.png" height="70px">
         </div>
-        <h1 class="display-4 mb-3" style='color:rgb(77, 206, 211)'><strong>ReacType</strong></h1>
-        <small class="text-muted">Copyright &#169; ReacType 2021</small>
+        <h1 class="display-4 mb-sm-3 text-center" style='color:rgb(77, 206, 211)'><strong>ReacType</strong></h1>
+        <small class="text-muted text-sm-left text-center">Copyright &#169; ReacType 2021</small>
       </div>
-      <div id="footer-contributors" class='col-6'>
-        <h5 class="text-muted mt-2 mb-5">CONTRIBUTORS</h5>
+      <div id="footer-contributors" class='col-sm-6'>
+        <h5 class="text-muted mt-sm-2 mb-sm-5 text-center mt-5">CONTRIBUTORS</h5>
         <div id="team" class="d-flex">
           <div id="contributors-left" class="mr-5">
         <div class="contributor mb-3">
@@ -355,7 +355,7 @@
          </div>
       </div>
 
-      <div id="footer-oslabs">
+      <div id="footer-oslabs" class='text-center'>
         <img src="https://opensourcelabs.io/images/oslabs-white.png" alt="oslabs logo" width="130px" class="mt-2">
        
         <div class="mt-3">
