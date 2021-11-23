@@ -11,7 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
   <link rel="stylesheet" href="style.css">
   <link rel="shortcut icon" href="favicon.ico">
-  
+
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -67,7 +67,7 @@
     </div>
   </nav>
   <!-- end of navbar -->
-   
+
   <!-- header -->
 
   <header style='background-color: #282c34; padding: 5rem 0'>
@@ -77,7 +77,7 @@
         A visual prototyping tool for React developers
       </h3>
       <p class="mb-2 mt-4 text-center" style='color: #c5c3c3'>
-        comprehensive type checking with <strong style="color: #fff; opacity: 0.9">TypeScript</strong> 
+        comprehensive type checking with <strong style="color: #fff; opacity: 0.9">TypeScript</strong>
       </p>
       <p class="text-center" style='color: #c5c3c3'>
         and flexible exporting in <em style="color: #FDB849; opacity: 0.9">classic React</em>, <em style="color: #FDB849; opacity: 0.9">Next.js</em>, or <em style="color: #FDB849; opacity: 0.9">Gatsby.js</em>
@@ -85,14 +85,14 @@
       <div id="header-buttons" class="text-center mt-5">
         <a type="button" class="btn btn-info" href="#download-section">Download Now</a>
         <a type="button" href="tutorial.html" class="btn btn-link text-info">Take the Tutorial <i class="bi bi-chevron-double-right"></i></a>
-        
+
       </div>
       </div>
       <h1 class="display-3 align-self-center text-center" style='color:rgb(77, 206, 211)'>
-        <strong>ReacType 8.0</strong>
+        <strong>ReacType 9.0</strong>
       </h1>
-      
-      
+
+
     </div>
   </header>
   <!-- end of header -->
@@ -100,20 +100,19 @@
   <!-- About ReacType section -->
   <div class="container mb-3 d-none d-sm-flex" style="border-left: 4px solid #FDB849; height: 100px; "></div>
 
-  <section class="mb-5">
+  <section class="mb-9">
     <div class="container pl-0">
-      <p style="font-size: 2rem;" class="mb-0 text-center text-sm-left mt-5 mt-sm-0"><em>About ReacType</em></p>
-      <div class="d-flex flex-sm-row flex-column-reverse">
-         
+      <p class="mb-0 text-sm-center" style="font-size: 2.9rem;">Create Your React App</p>
+      <div class="d-flex justify-content-around">
+
         <p class="col-sm-6 mt-3 pl-sm-0 text-sm-left text-center" style="color: #505050"><strong>ReacType</strong> is a prototyping tool that allows users to visualize their application architecture dynamically, employing a
         drag-and-drop canvas display and a real-time component code preview. The user can create components and drag instances
         of these components and HTML elements onto the canvas. This architecture can then be published on a dashboard and
         exported as TypeScript files to be used as a starter template for any repository. The dashboard displays the user’s
         saved templates and published ReacType templates, providing a social platform where templates can be liked, commented
         on, and imported directly into the user’s canvas.</p>
-        <h4 class="display-4 d-sm-flex d-none col-sm-6 col-12 text-sm-right text-center"><strong>What is ReacType?</strong> </h4>
-        
-      </div>
+        <img class='main-logo' src="./images/ReacType-logo.png" alt="ReacType Logo">
+      </div>  
     </div>
   </section>
   <!-- end of About section -->
@@ -154,6 +153,24 @@
       <div id="features">
 
         <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="./screenshots/css-editor.gif" alt="" width="100%" height="auto" class="col-sm-4 col-12">
+          <div class="text col-sm-6 col-12 text-center text-sm-left">
+            <h3 class="h3 mt-3 ">React Router</h3>
+            <p>Easily create routes with the new Switch and Link router elements.</p>
+          </div>
+        </div>
+        <hr width="60%">
+
+        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
+          <img src="./screenshots/css-editor.gif" alt="" width="100%" height="auto" class="col-sm-4 col-12">
+          <div class="text col-sm-6 col-12 text-center text-sm-left">
+            <h3 class="h3 mt-3 ">State Management</h3>
+            <p>Hooks and Context API are enabled to handle your state across components</p>
+          </div>
+        </div>
+
+        <hr width="60%">
+        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
           <img src="./screenshots/export-new.gif" alt="" width="100%" height="auto" class="col-sm-4 col-12">
           <div class="text col-sm-6 col-12 text-center text-sm-left">
             <h3 class="h3 mt-3 ">Export Test Suites</h3>
@@ -167,24 +184,6 @@
           <div class="text col-sm-6 col-12 text-center text-sm-left">
             <h3 class="h3 mt-3 ">Integrated CSS Editor with Live Demo</h3>
             <p>Copy & paste existing stylesheets or create live in the CSS Editor. As you create new instances and add styling, watch as your code dynamically renders a live demo.</p>
-          </div>
-        </div>
-        <hr width="60%">
-
-        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./screenshots/css-editor.gif" alt="" width="100%" height="auto" class="col-sm-4 col-12">
-          <div class="text col-sm-6 col-12 text-center text-sm-left">
-            <h3 class="h3 mt-3 ">Embedded Annotations</h3>
-            <p>Capture important design feedback during development</p>
-          </div>
-        </div>
-        <hr width="60%">
-
-        <div class="feature d-flex flex-sm-row flex-column justify-content-center mt-5" data-aos="fade-up" data-aos-once="true" data-aos-duration="300" data-aos-easing="ease-in" data-aos-anchor-placement="top-center">
-          <img src="./screenshots/css-editor.gif" alt="" width="100%" height="auto" class="col-sm-4 col-12">
-          <div class="text col-sm-6 col-12 text-center text-sm-left">
-            <h3 class="h3 mt-3 ">State Management</h3>
-            <p>Once props have been saved to state, ReacType will auto-generate React State Hooks for later use. No more prop drilling!</p>
           </div>
         </div>
         <hr width="60%">
@@ -214,14 +213,14 @@
             <p>View dynamically created components/HTML elements in the component tree</p>
           </div>
         </div>
-        
+
 
       </div>
     </div>
   </section>
   <!-- end of features section -->
 
-  
+
   <!-- start of footer -->
   <footer style="background-color:#1a1d24;">
     <div class="container d-flex flex-sm-row flex-column-reverse py-5">
@@ -243,7 +242,7 @@
           <a href="https://www.linkedin.com/in/akbuma" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Aaron Bumanglag</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/spincycle01" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -251,7 +250,7 @@
           <a href="https://linkedin.com/in/adsing" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Adam
             Singer</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/aw2934" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -259,7 +258,7 @@
           <a href="https://www.linkedin.com/in/alex-wolinsky-80ab591b2/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Alex Wolinsky</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/buddhajjigae" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -274,7 +273,7 @@
           <a href="https://www.linkedin.com/in/andrewjcho84/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Andrew Cho</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/Anthonytorrero" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -282,7 +281,7 @@
           <a href="https://www.linkedin.com/in/anthony-torrero-4b8798159/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Anthony Torrero</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/brianjshan" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -290,7 +289,7 @@
           <a href="https://www.linkedin.com/in/brianjisoohan/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Brian Han</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/null267" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -298,7 +297,7 @@
           <a href="https://www.linkedin.com/in/charles-finocchiaro-62440040/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Charles Finocchiaro</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/chelseyeslehc" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -306,7 +305,7 @@
           <a href="https://www.linkedin.com/in/chelsey-fewer/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Chelsea Fewer</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/ChristianEdwardPadilla" target="_blank" class=" footer-link"
             style="text-decoration: none;">
@@ -316,13 +315,31 @@
               class="bi bi-linkedin mr-2"></i>Christian Padilla</a>
         </div>
 
+        <div class="contributor mb-3">
+          <a href="https://github.com/chrisjtang" target="_blank" class=" footer-link"
+            style="text-decoration: none;">
+            <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/chrisjtang/" target="_blank" class=" footer-link"><i
+              class="bi bi-linkedin mr-2"></i> Chris Tang</a>
+        </div>
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/crlim" target="_blank" class=" footer-link"
+            style="text-decoration: none;">
+            <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://linkedin.com/in/crystallim" target="_blank" class=" footer-link"><i
+              class="bi bi-linkedin mr-2"></i> Crystal Lim</a>
+        </div>
+
          <div class="contributor mb-3">
           <a href="https://github.com/dreille" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
           </a>
           <a href="https://www.linkedin.com/in/daniel-reilley" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Daniel Reilley</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/MadinventorZero" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -337,7 +354,7 @@
           <a href="https://www.linkedin.com/in/diegovazquezny/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Diego Vazquez</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/eddypjr" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -345,7 +362,7 @@
           <a href="http://www.linkedin.com/in/edwardparkwork" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Edward Park</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/elenaconn" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -353,7 +370,7 @@
           <a href="https://www.linkedin.com/in/elena-conn/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Elena Conn</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/ibeeliot" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -361,7 +378,7 @@
           <a href="https://www.linkedin.com/in/ibeeliot" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Eliot Nguyen</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/fredosauce" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -369,7 +386,7 @@
           <a href="https://www.linkedin.com/in/fredochen/" target="_blank" class=" footer-link"><i
               class="bi bi-linkedin mr-2"></i>Fredo Chen</a>
         </div>
-        
+
         <div class="contributor mb-3">
           <a href="https://github.com/jzuniga206" target="_blank" class=" footer-link" style="text-decoration: none;">
             <i class="bi bi-github mr-2 footer-link"></i>
@@ -385,9 +402,9 @@
               class="bi bi-linkedin mr-2"></i>Jin Soo Lim</a>
         </div>
         </div>
-        
+
         <div id="contributors-right">
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/jonocr" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -402,7 +419,7 @@
             <a href="https://www.linkedin.com/in/jwuarchitect/" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Julie Wu</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/xkevinpark" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -417,7 +434,7 @@
             <a href="https://www.linkedin.com/in/khuong-nguyen/" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Khuong Nguyen</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/linhatran" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -425,7 +442,7 @@
             <a href="https://www.linkedin.com/in/linhatran" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Linh Tran</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/lukemadden" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -440,7 +457,7 @@
           </a>
           <a href="https://www.linkedin.com/in/miles-m-wright/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Miles Wright</a>
         </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/mitchelsevere" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -448,7 +465,7 @@
             <a href="https://www.linkedin.com/in/misevere/" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Mitchel Severe</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/natattackvick" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -463,7 +480,15 @@
           </a>
           <a href="https://www.linkedin.com/in/philip-minh-hua/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>Philip Hua</a>
         </div>
-        
+
+        <div class="contributor mb-3">
+          <a href="https://github.com/sean1292" target="_blank" class=" footer-link" style="text-decoration: none;">
+            <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/ronfu" target="_blank" class=" footer-link"><i
+              class="bi bi-linkedin mr-2"></i>Ron Fu</a>
+        </div>
+
           <div class="contributor mb-3">
             <a href="https://github.com/sean1292" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -471,7 +496,7 @@
             <a href="https://www.linkedin.com/in/sean-sadykoff/" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Sean Sadykoff</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/slhoehn" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -479,7 +504,7 @@
             <a href="http://www.linkedin.com/in/shana-hoehn" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Shana Hoehn</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/ShlomoPorges" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -487,7 +512,7 @@
             <a href="https://linkedin.com/shlomoporges" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Shlomo Porges</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/stormikph" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -495,7 +520,7 @@
             <a href="https://www.linkedin.com/in/stormikph/" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Stormi Hashimoto</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/tolgamizrakci" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -503,7 +528,7 @@
             <a href="https://linkedin.com/in/tolga-mizrakci" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Tolga Mizrakci</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/tonyito" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -511,7 +536,7 @@
             <a href="https://www.linkedin.com/in/tony-ito-cole" target="_blank" class=" footer-link"><i
                 class="bi bi-linkedin mr-2"></i>Tony Ito-cole</a>
           </div>
-        
+
           <div class="contributor mb-3">
             <a href="https://github.com/tsully" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -527,6 +552,13 @@
           <a href="https://www.linkedin.com/in/william-rittwage/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>William Rittwage</a>
         </div>
 
+        <div class="contributor mb-3">
+          <a href="https://github.com/WilliamCheng12345" target="_blank" class=" footer-link" style="text-decoration: none;">
+            <i class="bi bi-github mr-2 footer-link"></i>
+          </a>
+          <a href="https://www.linkedin.com/in/william-cheng-0723/" target="_blank" class=" footer-link"><i class="bi bi-linkedin mr-2"></i>William Cheng</a>
+        </div>
+
           <div class="contributor mb-3">
             <a href="https://github.com/williamdyoon" target="_blank" class=" footer-link" style="text-decoration: none;">
               <i class="bi bi-github mr-2 footer-link"></i>
@@ -540,21 +572,21 @@
 
       <div id="footer-oslabs" class='text-center'>
         <img src="https://opensourcelabs.io/images/oslabs-white.png" alt="oslabs logo" width="130px" class="mt-2">
-       
+
         <div class="mt-3">
           <a href="https://opensourcelabs.io/" class="text-light my-3 text-end"><em>opensourcelabs.io</em></a>
         </div>
       </div>
     </div>
   </footer>
- 
-  
+
+
 <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
   <script>
     AOS.init();
 
   </script>
-  
+
 </body>
 
 </html>
