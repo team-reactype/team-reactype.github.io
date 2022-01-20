@@ -1,0 +1,83 @@
+  html {
+  scroll-behavior: smooth;
+}
+  body {
+    background-color: rgb(252, 252, 252);
+  }
+   
+    /* ********************************* */
+    /* NAVIGATION */
+    /* ********************************* */
+
+
+    /* github icon and linkedin icon */
+  
+    .nav-icon-gh, .nav-icon-li {
+      height: 1.5rem;
+      width: 1.5rem;
+      opacity: 0.9;
+      color: white;
+    }
+    .nav-icon-gh:hover, .nav-icon-li:hover {
+      opacity: 1;
+      transition: all .3s ease-in-out;
+      transform: scale(1.2);
+    }
+   
+/* download button to redirect to download buttons */
+     #download-link {
+      color: #FDB849;
+      opacity: 0.9;
+    }
+    #download-link:hover {
+      opacity: 0.9;
+      color:rgb(77, 206, 211)
+    }
+    /* meet the team button to redirect to team */
+     #meet-link {
+      color: #FDB849;
+      opacity: 0.9;
+    }
+    #meet-link:hover {
+      opacity: 0.9;
+      color:rgb(77, 206, 211)
+    } 
+    .footer-link {
+      color: rgb(199, 199, 199);
+    }
+    .footer-link:hover {
+      color: #FDB849;
+      text-decoration: none;
+    }
+    
+    
+  
+    /* ********************************* */
+    /* KEYFRAMES */
+    /* ********************************* */
+
+    @media screen and (max-width: 800px) {
+      .team-profiles {
+        flex-direction: column;
+      }
+
+      .nav-item-text {
+        display: none;
+      }
+
+      .nav-icon {
+        position: absolute;
+        top: 50%;
+        -ms-transform: translateY(-50%);
+        transform: translateY(-50%);
+      }
+
+      .team-div {
+        text-align: center;
+      }
+   
+    }
+    h5 .text-muted mt-sm-2 mb-sm-5 text-center mt-5{
+      background:red;
+    }
+  
