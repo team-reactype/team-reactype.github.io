@@ -70,7 +70,7 @@
       <p class="col-8 pl-0">
         <strong>Prerequisites:</strong> Advanced knowledge in <em>HTML</em>,
         <em>CSS</em>, <em>React</em>, <em>TypeScript</em>,
-        <em>Quantum Physics</em>, <em>Organic Chemistry</em> ... <strong>just kidding!</strong>
+        <em>Quantum Physics</em>, <em>Organic Chemistry</em> ... <strong>Just kidding!</strong>
         Only your excitement to get started!
       </p>
     </div>
@@ -94,7 +94,7 @@
         <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
           <h4>Start a Project (only after registration)</h4>
           <p>
-            Users can create a new Next.js, Gatsby.js, or classic React project with just the click of a button! Registered users have the option of saving their projects to their account so they can return to them anytime.
+            Users can create a new Next.js, Gatsby, or classic React project with just the click of a button! Registered users have the option of saving their projects to their account so they can return to them anytime.
           </p>
         </div>
       </div>
@@ -107,6 +107,18 @@
           <h4>Add Components</h4>
           <p>
             Users can create new components in the bottom panel. Components can be associated with a route, a link, or they can be used within other components.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
+        <div class="col-sm-5 col-10 mx-auto">
+          <img src="./screenshots/create-instance.gif" alt="" width="100%" />
+        </div>
+        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
+          <h4>Create Instances on Canvas</h4>
+          <p>
+            Each component has its own canvas. Add an element to a component by dragging it onto the canvas. Div components are arbitrarily nestable and useful for complex layouts. Next.js and Gatsby projects have Link components to enable client-side navigation to other routes.
           </p>
         </div>
       </div>
@@ -138,14 +150,60 @@
 
       <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
         <div class="col-sm-5 col-10 mx-auto">
-          <img src="./screenshots/delete-HTML-element.gif" alt="" width="100%" />
+          <img src="./screenshots/deleteElement.gif" alt="" width="100%" />
         </div>
         <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
           <h4>Delete Custom HTML Elements</h4>
           <p>
-            Custom HTML elements will appear in the left sidebar, and can be deleted by clicking on the 
-            "X" button adjacent to the element. Be careful when deleting custom elements: All instances
-            of the element will be deleted within the project.
+            Custom HTML elements will appear in the left sidebar. If you want to delete an individual instance of an HTML element, select the element and then navigate to the Customization tab. Then, click "Delete Instance". Alternatively, select the element you want to delete and then click the "Delete" button on your keyboard.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
+        <div class="col-sm-5 col-10 mx-auto">
+          <img src="./screenshots/stateManager.gif" alt="" width="100%" />
+        </div>
+        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
+          <h4>Create and Edit State</h4>
+          <p>
+           If you want to add state to a component, select it in the left sidebar and then navigate to the State Manager tab. Click "Create/Edit", and then create a state variable -- its associated React Hook will be automatically generated! Also you can look at the tables in this tab to see which props are available from parent components. You can click the "+" button next to any props you would like to pass in from the parent component.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
+        <div class="col-sm-5 col-10 mx-auto">
+          <img src="./screenshots/displayState.gif" alt="" width="100%" />
+        </div>
+        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
+          <h4>Visualize State Flow</h4>
+          <p>
+            Once you're inside the State Manager, you can click on "Display" to look at how state is flowing within your application. Click on each component to see what state variables and React Hooks it has. You can also see if it has any passed in props from its parent component. 
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-sm-between py-5">
+        <div class="col-sm-5 col-10 mx-auto">
+          <img src="./screenshots/live-preview.gif" alt="" width="100%" />
+        </div>
+        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
+          <h4>Live Code Preview</h4>
+          <p>
+            Clicking the "Code Preview" tab in the bottom panel opens the code editor. Here, users can make changes to the code, such as adding styling, event handlers, elements and even components. The resulting code will be transpiled and live-rendered in the top right section.
+          </p>
+        </div>
+      </div>
+
+      <div class="d-flex flex-sm-row flex-column justify-content-sm-between py-5">
+        <div class="col-sm-5 col-10 mx-auto">
+          <img src="./screenshots/export-new.gif" alt="" width="100%" />
+        </div>
+        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
+          <h4>Export Projects</h4>
+          <p>
+            Click the “Export" button to export the project as a full-fledged application containing TypeScripts files, Webpack, Express server, routing -- all appropriately structured depending on the project type. Clicking the "Include Tests" checkbox allows users to export test suites along with their project files!
           </p>
         </div>
       </div>
@@ -166,12 +224,12 @@
 
       <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
         <div class="col-sm-5 col-10 mx-auto">
-          <img src="./screenshots/create-instance.gif" alt="" width="100%" />
+          <img src="./screenshots/update-styling.gif" alt="" width="100%" />
         </div>
         <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
-          <h4>Create Instances on Canvas</h4>
+          <h4>Update Styling</h4>
           <p>
-            Each component has its own canvas. Add an element to a component by dragging it onto the canvas. Div components are arbitrarily nestable and useful for complex layouts. Next.js and Gatsby.js projects have Link components to enable client-side navigation to other routes.
+            Select an element on the canvas to update its basic style attributes on the bottom panel. As you create new instances and add styling, watch as your code dynamically generates in the code preview in the bottom panel and turns into a live demo.
           </p>
         </div>
       </div>
@@ -190,18 +248,6 @@
 
       <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
         <div class="col-sm-5 col-10 mx-auto">
-          <img src="./screenshots/update-styling.gif" alt="" width="100%" />
-        </div>
-        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
-          <h4>Update Styling</h4>
-          <p>
-            Select an element on the canvas to update its basic styleattributes on the bottom panel. As you create new instances and add styling, watch as your code dynamically generates in the code preview in the bottom panel and turns into a live demo.
-          </p>
-        </div>
-      </div>
-
-      <div class="d-flex flex-sm-row flex-column justify-content-between py-5">
-        <div class="col-sm-5 col-10 mx-auto">
           <img src="./screenshots/DarkMode.gif" alt="" width="100%" />
         </div>
         <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
@@ -212,35 +258,10 @@
           </p>
         </div>
       </div>
-
-      <div class="d-flex flex-sm-row flex-column justify-content-sm-between py-5">
-        <div class="col-sm-5 col-10 mx-auto">
-          <img src="./screenshots/export-new.gif" alt="" width="100%" />
-        </div>
-        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
-          <h4>Export Projects</h4>
-          <p>
-            Click the “Export" button to export the project as a full-fledged application containing TypeScripts files, Webpack, Express server, routing -- all appropriately structured depending on the project type. Clicking the "include tests" checkbox allows users to export test suites along with their project files!
-          </p>
-        </div>
-      </div>
-
-      <div class="d-flex flex-sm-row flex-column justify-content-sm-between py-5">
-        <div class="col-sm-5 col-10 mx-auto">
-          <img src="./screenshots/live-preview.gif" alt="" width="100%" />
-        </div>
-        <div class="col-sm-6 mt-sm-0 mt-5 text-center align-self-center">
-          <h4>Live Code Preview</h4>
-          <p>
-            Clicking the "Code Preview" tab in the bottom panel opens the code editor. Here, users can make changes to the code, such as adding styling, event handlers, elements and even components. The resulting code will be transpiled and live-rendered in the top right section.
-          </p>
-        </div>
-      </div>
     </div>
   </section>
 
   <!-- end of tutorial -->
-
   <!-- start of footer -->
   <footer style="background-color: #1a1d24">
     <div class="container d-flex flex-sm-row flex-column-reverse py-5">
@@ -285,6 +306,15 @@
             </div>
 
             <div class="contributor mb-3">
+              <a href="https://github.com/ahsan-rao" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://linkedin.com/in/ahsan-rao" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Ahsan Rao</a>
+            </div>
+
+            <div class="contributor mb-3">
               <a href="https://github.com/aw2934" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
               </a>
@@ -319,7 +349,24 @@
                   class="bi bi-linkedin mr-2"></i>Anthony Torrero</a>
             </div>
 
+            <div class="contributor mb-3">
+              <a href="https://github.com/BenCauffman" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://linkedin.com/in/benjamin-cauffman" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Ben Cauffman</a>
+            </div>
             
+            <div class="contributor mb-3">
+              <a href="https://github.com/BiancaPicasso" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/bianca-picasso/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Bianca Picasso</a>
+            </div>
+
             <div class="contributor mb-3">
               <a href="https://github.com/brianjshan" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
@@ -335,14 +382,22 @@
                 <a href="https://www.linkedin.com/in/chaubryan1" target="_blank" class="footer-link"><i
                   class="bi bi-linkedin mr-2"></i>Bryan Chau</a>
                 </div>
-                
+            
                 <div class="contributor mb-3">
-                  <a href="https://github.com/BiancaPicasso" target="_blank" class="footer-link"
+                  <a href="https://github.com/calvincao" target="_blank" class="footer-link" style="text-decoration: none">
+                    <i class="bi bi-github mr-2 footer-link"></i>
+                  </a>
+                  <a href="https://www.linkedin.com/in/calvincao9/" target="_blank" class="footer-link"><i
+                      class="bi bi-linkedin mr-2"></i>Calvin Cao</a>
+                </div>
+    
+                <div class="contributor mb-3">
+                  <a href="https://github.com/carlyjackson" target="_blank" class="footer-link"
                     style="text-decoration: none">
                     <i class="bi bi-github mr-2 footer-link"></i>
                   </a>
-                  <a href="https://www.linkedin.com/in/bianca-picasso/" target="_blank" class="footer-link"><i
-                      class="bi bi-linkedin mr-2"></i>Bianca Picasso</a>
+                  <a href="https://www.linkedin.com/in/carly-jackson-ab9010231/" target="_blank" class="footer-link"><i
+                      class="bi bi-linkedin mr-2"></i>Carly Jackson</a>
                 </div>
                 
             <div class="contributor mb-3">
@@ -381,7 +436,7 @@
             </div>
 
             <div class="contributor mb-3">
-              <a href="https://www.linkedin.com/in/crystallim/" target="_blank" class="footer-link"
+              <a href="https://github.com/crlim" target="_blank" class="footer-link"
                 style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
               </a>
@@ -395,6 +450,15 @@
               </a>
               <a href="https://www.linkedin.com/in/daniel-reilley" target="_blank" class="footer-link"><i
                   class="bi bi-linkedin mr-2"></i>Daniel Reilley</a>
+            </div>
+
+            <div class="contributor mb-3">
+              <a href="https://github.com/dnngau" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/darin-ngau/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Darin Ngau</a>
             </div>
 
             <div class="contributor mb-3">
@@ -437,6 +501,14 @@
               </a>
               <a href="https://www.linkedin.com/in/ibeeliot" target="_blank" class="footer-link"><i
                   class="bi bi-linkedin mr-2"></i>Eliot Nguyen</a>
+            </div>
+
+            <div class="contributor mb-3">
+              <a href="https://github.com/Evan-Crews" target="_blank" class="footer-link" style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/evan-crews/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Evan Crews</a>
             </div>
 
             <div class="contributor mb-3">
@@ -489,6 +561,14 @@
             </div>
 
             <div class="contributor mb-3">
+              <a href="https://github.com/kchender" target="_blank" class="footer-link" style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/kchender/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Katrina Henderson</a>
+            </div>
+
+            <div class="contributor mb-3">
               <a href="https://github.com/ken-Bains" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
               </a>
@@ -529,6 +609,15 @@
             </div>
 
             <div class="contributor mb-3">
+              <a href="https://github.com/mikogome" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="www.linkedin.com/in/michaelng2" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Michael Ng</a>
+            </div>
+
+            <div class="contributor mb-3">
               <a href="https://github.com/Miles818" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
               </a>
@@ -562,7 +651,6 @@
                   class="bi bi-linkedin mr-2"></i>Philip Hua</a>
             </div>
 
-            
             <div class="contributor mb-3">
               <a href="https://github.com/rfvisuals" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
@@ -622,6 +710,15 @@
             </div>
 
             <div class="contributor mb-3">
+              <a href="https://github.com/tlukasiewicz89" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/thomas-lukasiewicz-27676273/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Thomas Lukasiewicz</a>
+            </div>
+
+            <div class="contributor mb-3">
               <a href="https://github.com/tolgamizrakci" target="_blank" class="footer-link"
                 style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
@@ -655,7 +752,7 @@
             </div>
 
             <div class="contributor mb-3">
-              <a href="https://www.linkedin.com/in/william-cheng-0723/" target="_blank" class="footer-link" style="text-decoration: none">
+              <a href="https://github.com/WilliamCheng12345" target="_blank" class="footer-link" style="text-decoration: none">
                 <i class="bi bi-github mr-2 footer-link"></i>
               </a>
               <a href="https://www.linkedin.com/in/william-cheng-0723/" target="_blank" class="footer-link"><i
@@ -678,9 +775,19 @@
               <a href="https://www.linkedin.com/in/williamdyoon/" target="_blank" class="footer-link"><i
                   class="bi bi-linkedin mr-2"></i>William Yoon</a>
             </div>
+
+            <div class="contributor mb-3">
+              <a href="https://github.com/kr1spybacon" target="_blank" class="footer-link"
+                style="text-decoration: none">
+                <i class="bi bi-github mr-2 footer-link"></i>
+              </a>
+              <a href="https://www.linkedin.com/in/yuanjihuang/" target="_blank" class="footer-link"><i
+                  class="bi bi-linkedin mr-2"></i>Yuanji Huang</a>
+            </div>
           </div>
         </div>
       </div>
+
       <div id="footer-oslabs" class="text-center">
         <img src="https://opensourcelabs.io/images/oslabs-white.png" alt="oslabs logo" width="130px" class="mt-2" />
 
